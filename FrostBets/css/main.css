@@ -1,0 +1,647 @@
+body {
+	margin: 0;
+	background-color: #142B3C;
+}
+
+#pre_header {
+	background-color: #fff;
+}
+
+label.error {
+	width: 100%;
+	color: #00D0D8;
+	font-weight: 500;
+	font-size: 0.9em;
+	margin-bottom: 0;
+	text-align: center;
+}
+
+input.error {
+	box-shadow: 0 0 10px red;
+}
+
+nav {
+	z-index: 1035;
+}
+
+#head {
+	height: 70px;
+	background-image: url("../media/header_line.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0;
+	position: fixed;
+}
+
+.navbar-brand {
+	padding: 0;
+}
+
+#pre_header {
+	height: 30px;
+}
+
+#logo, #logo_in_modalregistration {
+	height: 70px;
+	width: 185px;
+}
+
+.elems_in_header {
+	border-right: 1px solid #7A94A9;
+	margin-top: 20px;
+	padding: 5px 3px 5px 5px;  
+}
+
+.ion-ios-help-outline {
+	color: #fff;
+	width: 10px;
+}
+
+.link {
+	color: #B4E9F1;
+	text-decoration: none;
+	margin-right: 5px;
+	outline: none; 
+}
+
+.link:hover, #fargot_password:hover {
+	color: #BC89E6;
+}
+
+#support {
+	border-right: 1px solid #fff;
+}
+
+#input1::-moz-placeholder, #input2::-moz-placeholder {
+	color: #000;
+}
+
+#input1::-webkit-input-placeholder, #input2::-webkit-input-placeholder {
+	color: #000;
+}
+
+#input1, #input2 {
+	height: 25px;
+	border: 2px solid #000;
+	border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   background-color: #417094;
+   padding: 2px 2px 3px 5px;
+   outline: none;
+   margin-right: 5px;
+   color: #000; 
+}
+
+#input1:focus, #input2:focus {
+	box-shadow: 0 0 20px #B4E9F1;
+	-webkit-box-shadow: 0 0 20px #B4E9F1;
+}
+
+#fargot_password {
+	position: relative;
+	text-decoration: none;
+	font-size: 0.8em;
+	color: #B4E9F1;
+	right: -265px;
+}
+
+#login_error {
+	height: 20px;
+	text-align: center;
+	font-size: 0.9em;
+	color: #00D0D8;
+}
+
+#form_login {
+	position: relative;
+	top: 14px;
+}
+
+#btn_login {
+	position: relative;
+}
+
+#btn_login, #btn_input_money {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -khtml-border-radius: 5px;
+	outline: none;
+	font-weight: 500;
+	background-color: #DF6649;
+	border: 1px #DF6649 solid;
+	padding: 1px 5px 1px 5px;
+}
+
+#btn_login:hover, #btn_input_money:hover {
+	box-shadow: 0 0 30px #CB5940;
+	-webkit-box-shadow: 0 0 30px #CB5940;
+}
+
+#btn_login:active, #btn_input_money:active {
+	box-shadow: 0 0 30px #2A75AE;
+	-webkit-box-shadow: 0 0 30px #2A75AE;
+	background-color: #CB593F;
+	border-color: #CB593F;
+}
+
+#btn_registration {
+	position: relative;
+}
+
+#btn_registration, #btn_other_actions {
+	background-color: #FFB207;
+	outline: none;
+	border: 1px #FFB20C solid;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -khtml-border-radius: 5px;
+   font-weight: 500;
+   padding: 1px 5px 1px 5px;
+}
+
+#btn_registration:hover, #btn_other_actions:hover {
+	box-shadow: 0 0 30px #FFDD00;
+	-webkit-box-shadow: 0 0 30px #FFDD00;
+}
+
+#btn_registration:active, #btn_other_actions:active {
+	box-shadow: 0 0 30px #2A75AE;
+	-webkit-box-shadow: 0 0 30px #2A75AE;
+	background-color: #F0A000;
+	border-color: #F0A000;
+}
+
+.modal-header {
+	background-color: #3F637F;
+	padding: 0 10px 0 20px; 
+}
+
+#body_modal_contact {
+	background-color: #C0D7DA;
+}
+
+#close_modal {
+	outline: none;
+}
+
+#email_contact, #other_topic {
+	height: 30px;
+	border: 2px #2A75AE solid;
+	outline: none;
+    padding: 2px 2px 3px 5px;
+	border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+}
+
+#other_topic:focus, #email_contact:focus, #textarea_for_contact:focus {
+	box-shadow: 0 0 15px #2A75AE;
+	-webkit-box-shadow: 0 0 15px #2A75AE;
+}
+
+.modal-footer {
+	background-color: #3F637F;
+}
+
+label {
+	color: #3F637F;
+}
+
+main {
+}
+
+#main {
+	display: flex;
+}
+
+#bets {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#prebets {
+	height: 200px;
+	margin-top: 80px;
+	background-color: #fff;
+}
+
+#bets {
+	padding: 0;
+}
+
+footer {
+	background-color: #C0D7DA;
+	border-bottom: 5px solid #3F637F;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+#footer_header {
+	background-image: url("../media/clouds_in_footer.png");
+	background-size: cover;
+	background-position: bottom;
+	background-color: #142B3C;
+	height: 110px;
+}
+
+#footer_main {
+	background-color: #fff;
+	padding: 0 15px 0 15px;
+	border-top: none;
+	margin: 0;
+}
+
+#footer_footer {
+	height: 15px;
+	background-color: #3F637F;
+	box-shadow: 0 0 30px #3F637F;
+	-webkit-box-shadow: 0 0 30px #3F637F;
+}
+
+#copyright {
+	color: #79BDF0;
+	font-size: 0.8em;
+}
+
+.text_in_footer {
+	color: #37566E;  
+}
+
+#label_btn_contact, #social_in_footer {
+	text-align: center;
+}
+
+#topic_of_problem {
+	height: 30px;
+	border: 2px #2A75AE solid;
+	outline: none;
+    padding: 2px 2px 3px 5px;
+	border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+}
+
+#topic_of_problem:focus {
+	box-shadow: 0 0 20px #2A75AE;
+	-webkit-box-shadow: 0 0 20px #2A75AE;
+}
+
+#div_other_topic {
+	display: none;
+}
+
+#btn_end_contact {
+	border: 2px #BCD7EC solid;
+	outline: none;
+	border-radius: 7px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -khtml-border-radius: 7px;
+   background-color: #BCD7EC;
+   color: #3F637F;
+}
+
+#btn_end_contact:hover {
+	box-shadow: 0 0 20px #BCD7EC;
+	-webkit-box-shadow: 0 0 20px #BCD7EC;
+}
+
+#btn_end_contact:active {
+	box-shadow: 0 0 20px #3F637F;
+	-webkit-box-shadow: 0 0 20px #3F637F;
+	background-color: #94AABA;
+	border-color: #94AABA;
+}
+
+#btn_contact {
+	background-image: url("../media/button_contact.png");
+	background-position: center;
+	height: 146px;
+	width: 146px;
+	border-radius: 70px;
+   -webkit-border-radius: 70px;
+   -moz-border-radius: 70px;
+   -khtml-border-radius: 70px;
+	border: 1px solid #fff;
+	font-size: 1.3em;
+	color: #38576E;
+	font-weight: 800;
+	outline: none;
+}
+
+#btn_contact:hover {
+	box-shadow: 0 0 30px #406582;
+	-webkit-box-shadow: 0 0 30px #406582;
+}
+
+#btn_contact:active {
+	box-shadow: 0 0 0px #fff;
+	border-color: #36566E;
+	background-color: #CACACA; 
+}
+
+#textarea_for_contact {
+	width: 100%;
+	height: 150px;
+	border: 2px #2A75AE solid;
+	outline: none;
+    padding: 2px 2px 3px 5px;
+	border-radius: 3px;
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+}
+
+.link_in_footer {
+	color: #7D7D7D;
+}
+
+.link_in_footer:hover {
+	color: #000;
+}
+
+#div_hello {
+	margin-right: 3px; 
+	margin-left: 3px;
+	color: #AECBE1;
+}
+
+#messages {
+	height: 15px;
+}
+
+.badge {
+	background-color: #AECBE1;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+   -khtml-border-radius: 10px;
+	position: relative;
+	top: -7px;
+	left: -13px;
+}
+
+#messages:hover {
+	box-shadow: 0 0 10px #B4E9F1;
+	-webkit-box-shadow: 0 0 10px #B4E9F1;
+}
+
+#balance_and_other {
+	position: relative;
+	top: 10px;
+	margin: 15px 0 0 5px;
+}
+
+#balance {
+	color: #AECBE1;
+}
+
+#balance span {
+	color: #fff;
+	font-weight: 500; 
+}
+
+#snowflake {
+	height: 15px;
+	margin-bottom: 3px; 
+}
+
+#btn_other_in_header {
+	margin-left: 20px;
+	margin-right: 0;
+}
+
+#dropdown {
+	margin-left: 10px;
+}
+
+.dropdown-menu {
+	position: relative;
+	margin-top: 3px; 
+	left: -19px;
+	background-color: #427295;
+	border: 2px solid #FFB207;
+}
+
+.dropdown-item {
+	color: #fff;
+	font-weight: 500;
+	border-bottom: 1px solid #7A94A9;
+}
+
+.dropdown-item:hover {
+	background-color: #4A99D4;
+}
+
+#head_FAQ {
+	background-color: #79BCF0;
+}
+
+#body_FAQ {
+	background-color: #3F627E;
+}
+
+#text_and_numbers_in_faq {
+	margin-left: 5px; 
+}
+
+.headers_in_FAQ {
+	color: #79BCF0;
+	text-align: center;
+}
+
+.text_in_FAQ {
+	color: #79BCF0;
+}
+
+.numbers_in_FAQ {
+	width: 30px;
+}
+
+.text_numbers {
+	padding-left: 30px; 
+}
+
+#text_registration, #text_agreement {
+	font-size: 1.5em;
+	font-weight: 500;
+	color: #fff;
+}
+
+#modal_body_regestration {
+	background-color: #3F637F;
+	padding-top: 0;
+}
+
+#close_modal_registration {
+	position: relative;
+	left: -30px;
+	outline: none;
+}
+
+#login_registration, #email_registration, #password_registration, #repeatpassword_registration {
+	height: 35px;
+	outline: none;
+	background-color: #34536B;
+	border-color: #3F637F;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   -khtml-border-radius: 7px;
+   color: #000;
+}
+
+#login_registration:focus, #email_registration:focus, #password_registration:focus, #repeatpassword_registration:focus {
+	box-shadow: 0 0 5px #fff;
+	-webkit-box-shadow: 0 0 5px #fff;
+}
+
+#btn_end_registration {
+	background-color: #6CA4CE;
+	border: 1px solid #6CA4CE;
+	padding: 3px 20px 3px 20px;
+	color: #fff;
+	outline: none;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -khtml-border-radius: 20px;
+}
+
+#btn_end_registration:hover {
+	box-shadow: 0 0 10px #6CA4CE;
+	-webkit-box-shadow: 0 0 10px #6CA4CE;
+}
+
+#label_check_read_agreement {
+	position: relative;
+	top: -7px;
+	color: #fff;
+}
+
+#check_read_agreement {
+	width: 25px;
+	height: 25px;
+}
+
+.form-check {
+	position: relative;
+	right: -60px;
+}
+
+#modal_body_agreement, #modal_body_confidentiality {
+	background-color: #3F637F;
+	color: #79BCF0;
+}
+
+.ion-close-round {
+	color: #fff;
+}
+
+.modal-header {
+	border: none;
+}
+
+.modal-footer {
+	border: none;
+}
+
+#a_agreement {
+	outline: none;
+}
+
+#error_login_registration, #error_email_registration {
+	color: #00D0D8;
+	font-weight: 500;
+	font-size: 0.9em;
+}
+
+#btn_choose_game {
+	width: calc(100% - 20px);
+	background-color: #235172;
+	border-color: #235172;
+	outline: none;
+	padding: 0 10px 0 10px;
+	font-weight: 500;
+	text-align: center;
+	border-top: 1px solid #000;
+	border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+   -moz-border-radius: 0 0 10px 10px;
+   -khtml-border-radius: 0 0 10px 10px;
+}
+
+#btn_choose_game:hover {
+	box-shadow: 0 0 10px #235172;
+	-webkit-box-shadow: 0 0 10px #235172;
+}
+
+#btn_choose_game:active {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+#choose_game {
+	position: relative;
+	top: 17px;
+}
+
+#csgo {
+	border-bottom: 1px solid #7A94A9;
+}
+
+#games {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	width: calc(100% - 20px);
+	margin-left: 20px;
+	background-color: #235172;
+}
+
+#games a:hover {
+	background-color: #285C82;
+	border-bottom: 2px solid #629FCA; 
+}
+
+#choose_game_index {
+	position: relative;
+	top: 13px;
+}
+
+#games_index {
+	display: none;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 200px;
+	margin-left: 185px;
+	background-color: #235172;
+}
+
+#games_index a:hover {
+	background-color: #285C82;
+	border-bottom: 2px solid #629FCA; 
+}
+
+#btn_choose_game_index {
+	width: 200px;
+	background-color: #235172;
+	border-color: #235172;
+	outline: none;
+	padding: 0 10px 0 10px;
+	font-weight: 500;
+	text-align: center;
+	border-top: 1px solid #000;
+	border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+   -moz-border-radius: 0 0 10px 10px;
+   -khtml-border-radius: 0 0 10px 10px;
+}

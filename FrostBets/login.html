@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<meta charset="utf-8">
+   		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title> Hello! </title>
+		<link rel="shortcut icon" href="media/icon4.ico">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/match.css">
+		<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<script type="text/javascript" src="js/script_match.js"></script>
+		<script type="text/javascript" src="js/script_bet.js"></script>
+
+	</head>
+
+	<body>
+
+		<!-- Место над хедером -->
+		<div class="container" id="pre_header"></div>
+
+		<!-- Хедер -->
+		<nav class="navbar navbar-expand-lg navbar-light col-12" id="head">
+			<div class="container">
+				<div class="navbar-brand">
+					<img src="media/logo.png" id="logo">
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+	    			<ul class="navbar-nav mr-auto">
+
+	    				<li class="nav-item">
+
+	        				<div class="elems_in_header"> <a class="link" href="#" id="support_in_header" data-toggle="modal" data-target="#modal_contact"> Техподдержка </a> </div> 
+
+	    				</li>
+
+	      				<li class="nav-item">
+
+	      					<div class="elems_in_header">
+	      						<i class="ion-ios-help-outline"> </i>
+	        					<a class="link" href="#" data-toggle="modal" data-target="#modal_FAQ"> FAQ </a>
+	        				</div>
+
+	      				</li>
+
+	      				<li class="nav-item">
+
+	      					<div class="elems_in_header">
+	      						<div class="row" id="div_hello">
+	      							
+	      							<a href="#" id="a_messages"> <img src="media/messages.png" id="messages"> <span class="badge">4</span> </a>
+	      							<div id="hello"> Добрый день, Login! </div>
+
+	      						</div>
+	      						
+	        				</div>
+
+	      				</li>
+
+	      				<li class="nav-item">
+
+	      					<div class="row" id="balance_and_other">
+	      							
+	      						<div id="balance"> Баланс: <span> 100 </span> <img src="media/snowflake.png" id="snowflake" class="text-center"> </div>
+
+	      						<div class="column">
+		      						<div class="row" id="btn_other_in_header">
+		      							
+		      							<button id="btn_input_money"> Внести </button>
+
+		      							<div class="dropdown show" id="dropdown">
+
+											<button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_other_actions"> Мой профиль </button>
+
+											<div class="dropdown-menu">
+										    	<a class="dropdown-item" href="#"> История ставок </a>
+										    	<a class="dropdown-item" href="#"> Депозит </a>
+										    	<a class="dropdown-item" href="#"> Вывести </a>
+										    	<a class="dropdown-item" href="#"> Настройки </a>
+										    	<a class="dropdown-item" href="#"> Выход </a>
+											</div>
+
+										</div>
+
+		      						</div>
+		      						<div class="text-right column" id="choose_game">
+
+		      							<div id="games">
+		      								<a href="#" id="csgo"><img src="media/csgo_logo.png"></a>
+		      								<a href="#" id="dota2"><img src="media/dota_logo.png"></a>
+		      							</div>
+										<button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_choose_game"> Выбрать игру </button>
+
+									</div>
+	      						</div>
+	      						
+	        				</div>
+
+	      				</li>
+
+	    			</ul>
+
+	  			</div>
+	  		</div>
+		</nav>
+
+		<!-- Сам сайт -->
+		<main class="container-fluid">
+
+			<div class="container col-12" id="prebets">
+				
+
+			</div>
+
+			<div class="mt-2" style="margin: 0;" id="main">
+
+				<div id="bets">
+
+					<div id="bets_name">
+						<h1>LIVE</h1>
+						<p>games now</p>
+					</div>
+
+					<div class="bet">
+						<div class="column">
+							<div class="l_logo">
+								<a href="#"><img src="media/mouslogo.png"></a>
+							</div>
+							<div class="l_team_name">
+								<a href="#"><p>1</p></a> 
+							</div>
+						</div>
+						<div class="column">
+							<p> ESL Pro League </p>
+							<p> <ion-icon name="time"></ion-icon> 1:08:59</p>
+							<div class="row coef_bet">
+								<a href="#" class="l_team_coef">3.26</a>
+								<div></div>
+								<a href="#" class="r_team_coef">1.56</a>
+							</div>
+							<p>BO3</p>
+						</div>
+						<div class="column">
+							<div class="r_logo">
+								<a href="#"><img src="media/fnaticlogo.png"></a>
+							</div>
+								<div class="r_team_name">
+								<a href="#"> </a>
+							</div>
+						</div>
+					</div>
+
+					<div class="bet">
+						<div class="column">
+							<div class="l_logo">
+								<a href="#"><img src="media/mouslogo.png"></a>
+							</div>
+							<div class="l_team_name">
+								<a href="#"><p>2</p></a> 
+							</div>
+						</div>
+						<div class="column">
+							<p> ESL Pro League </p>
+							<p> <ion-icon name="time"></ion-icon> 1:08:59</p>
+							<div class="row coef_bet">
+								<a href="#" class="l_team_coef">3.26</a>
+								<div></div>
+								<a href="#" class="r_team_coef">1.56</a>
+							</div>
+							<p>BO3</p>
+						</div>
+						<div class="column">
+							<div class="r_logo">
+								<a href="#"><img src="media/fnaticlogo.png"></a>
+							</div>
+								<div class="r_team_name">
+								<a href="#"> </a>
+							</div>
+						</div>
+					</div>
+
+					<div class="bet">
+						<div class="column">
+							<div class="l_logo">
+								<a href="#"><img src="media/mouslogo.png"></a>
+							</div>
+							<div class="l_team_name">
+								<a href="#"><p>3</p></a> 
+							</div>
+						</div>
+						<div class="column">
+							<p> ESL Pro League </p>
+							<p> <ion-icon name="time"></ion-icon> 1:08:59</p>
+							<div class="row coef_bet">
+								<a href="#" class="l_team_coef">3.26</a>
+								<div></div>
+								<a href="#" class="r_team_coef">1.56</a>
+							</div>
+							<p>BO3</p>
+						</div>
+						<div class="column">
+							<div class="r_logo">
+								<a href="#"><img src="media/fnaticlogo.png"></a>
+							</div>
+								<div class="r_team_name">
+								<a href="#"> </a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+				
+			
+		</main>
+
+		<!-- Футер -->
+		<footer class="container-fluid">
+
+			<!-- Шапка футера -->
+			<div class="container-fluid" id="footer_header"> </div>
+
+			<!-- Тело футера -->
+			<div class="row" id="footer_main">
+
+				<div class="container col-6 col-md-4 mb-2 mb-md-0" id="social_in_footer">
+					
+					<h4 class="text_in_footer"> Соцальные сети </h4>
+
+				</div>
+
+				<div class="container ml-0 mb-2 mb-md-0 col-6 col-md-4" id="information_in_footer">
+					
+					<div class="text-center">
+						
+						<h4 class="text_in_footer"> Информация </h4>
+						<a href="#" class="link_in_footer" data-toggle="modal" data-target="#modal_confidentiality"> Конфеденциальность </a> <br/>
+						<a href="#" class="link_in_footer" id="rules_of_service"> Правила сервиса </a>
+
+					</div>
+					
+				</div>
+				
+				<div class="container col-12 col-md-4" id="contact_with_administration">
+					
+					<div class="text-center">
+						
+						<h6 class="text_in_footer" id="label_btn_contact"> Возникла проблема или <br/> есть о чем сообщить? </h6>
+						<button id="btn_contact" data-toggle="modal" data-target="#modal_contact"> Напиши нам! </button> 
+
+					</div>
+					
+				</div>
+
+			</div>
+
+			<!-- Подвал футера -->
+			<div class="container-fluid" id="footer_footer">
+				<div class="text-center" id="copyright">
+					&#169 Copyright Все права защищены.
+				</div>
+			</div>
+			
+		</footer>
+
+		<!-- Окно со ставкой -->
+		<div class="modal fade" id="modal_bet" tabindex="-1" role="dialog" aria-labelledby="Bet" aria-hidden="true">
+
+			<div class="modal-dialog" role="document">
+
+			    <div class="modal-content">
+
+			    	<div class="modal-header" id="header_bet">
+
+			    		<div class="col-3" id="time_to_start_match">
+			    			<p> 06:20:59 </p>
+			    		</div>
+
+			    		<div class="col-6 text-center" id="info_about_bet">
+			    			<h6> ESL Pro League </h6>
+			    			<h6> BO3 </h6>
+			    			<h6> Feb. 24 17:00 </h6>
+			    		</div>
+
+			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal">
+          					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
+        				</button>
+
+			      	</div>
+
+			      	<div class="modal-body pl-0 pl-sm-3 pr-0 pr-sm-3" id="body_bet">
+			        	
+			      		<div id="type_of_bet">
+			      			<h6> Вид ставки </h6>
+			      		</div>
+
+			      		<div class="text-center" id="bet_on">
+			      			<h6> <span> &#9204</span>Победа в серии BO3<span>&#9205 </span> </h6>
+			      		</div>
+
+			      		<div class="text-center" id="choose_of_command">
+				      		<div class="ml-0 ml-sm-3" id="modal_l_team">
+				      			<div id="modal_l_team_name"> <a href="#"> Mouse </a> </div>
+				      			<a href="#" id="modal_l_team_logo"> <img src="media/mousesports.png"> </a>
+				      			<ion-icon id="checkmark_l" name="checkmark-circle"></ion-icon>
+				      		</div>
+				      		<div id="coef_l_team"> <a href="#" > 1.25 </a> </div>
+
+				      		<div id="modal_vs"> <p> VS </p> </div>
+
+							<div id="coef_r_team"> <a href="#" > 3.26 </a> </div>
+				      		<div class="mr-0 mr-sm-3" id="modal_r_team">
+				      			<div id="modal_r_team_name"> <a href="#"> Fnatic </a> </div>
+				      			<a href="#" id="modal_r_team_logo"> <img src="media/fnatic.png"> </a>
+				      			<ion-icon id="checkmark_r" name="checkmark-circle"></ion-icon>
+				      		</div>		
+				      	</div>
+
+				      	<div class="container" id="choose_of_sum">
+				      		<label> Сумма ставки: </label>
+				      		<input class="ml-3" type="number" name="sum_of_bet" placeholder="Введите сумму...">
+				      		<img src="media/snowflake.png" id="snowflake" class="text-center">
+				      	</div>
+
+				      	<div class="container">
+				      		<p id="min_sum_of_bet"> Минимальная сумма ставки - 10 <img src="media/snowflake.png" id="snowflake" class="text-center"> </p>
+				      		<p id="your_winnings"> Ваш потенциальный выигрыш: <span id="n"> n </span> <img src="media/snowflake.png" id="snowflake" class="text-center"> (x<span id="coef">3.26</span>) </p>
+				      	</div>
+
+			     	</div>
+
+			      	<div class="modal-footer" id="footer_bet">
+
+			      		<button class="ml-auto mr-auto" id="btn_do_bet"> Сделать ставку </button>
+
+			      	</div>
+			    </div>
+			</div>
+		</div>
+
+		<!-- Модальое окно связи с администрацией -->
+		<div class="modal fade" id="modal_contact" tabindex="-1" role="dialog" aria-labelledby="form_contact" aria-hidden="true">
+
+			<div class="modal-dialog" role="document">
+
+			    <div class="modal-content">
+
+			    	<div class="modal-header">
+
+			    		<img src="media/logo.png" id="logo_in_modalregistration">
+			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal">
+          					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
+        				</button>
+
+			      	</div>
+
+			      	<div class="modal-body"  id="body_modal_contact">
+			        	
+			      		<form id="contact_form">
+			      			
+			      			<div class="form-group row">
+							    <label for="email_contact" class="col-sm-2 col-1 ml-2 font-weight-bold"> Email </label>
+							    <div class="col-sm-6">
+							    	<input type="email" name="email_contact" class="form-control" id="email_contact" placeholder="Email"  aria-describedby="help_login">
+									<small id="help_email_contact"></small>
+							    </div>
+							</div>
+
+							<div class="form-groups">
+							    <label for="topic_of_problem" class="col-12 font-weight-bold"> 1) Выберите одну из тем: </label>
+							    <div class="col-sm-10 mb-2">
+							    	<select class="form-control" id="topic_of_problem">
+	    								<option>Проблема с выводом средств</option>
+									    <option>Ставка прошла, а средства не зачислились</option>
+									    <option>Проблема с пополнение кошелька</option>
+									    <option>Другое</option>
+								    </select>
+							    </div>
+							</div>
+
+							<div class="form-groups" id="div_other_topic">
+							    <label for="other_topic" class="col-sm-6 col-12 ml-2 font-weight-bold"> Введите тему обращения </label>
+							    <div class="col-sm-8">
+							    	<input type="text" name="other_topic" class="form-control" id="other_topic" placeholder="Другая тема"  aria-describedby="help_login">
+							    </div>
+							</div>
+
+							<div class="form-group">
+								<label for="i_read_faq" class="ml-3 font-weight-bold"> 2) Я полностью прочитал(а) <a href="#" data-toggle="modal" data-target="#modal_FAQ">FAQ</a> и не нашел(а) описание своей проблемы <input type="checkbox" name="i_read_faq" id="i_read_faq"> </label>
+							</div>
+
+							<div class="form-group">
+
+								<label for="textarea_for_contact" class="col-12 font-weight-bold text-center"> Ваше сообщение нам </label>
+								<div class="col-sm-12">
+									<textarea id="textarea_for_contact"></textarea>
+								</div>
+
+							</div>
+
+			     	</div>
+
+			      	<div class="modal-footer">
+
+			       		<div class="mr-auto ml-auto"> <button id="btn_end_contact"> Отправить </button> </div>
+
+			      	</div>
+			      	</form>
+			    </div>
+			</div>
+		</div>
+
+		<!-- Модальое окно FAQ -->
+		<div class="modal fade" id="modal_FAQ" tabindex="-1" role="dialog" aria-labelledby="FAQ" aria-hidden="true">
+
+			<div class="modal-dialog modal-lg" role="document">
+
+			    <div class="modal-content">
+
+			    	<div class="modal-header" id="head_FAQ">
+
+			    		<img src="media/logo.png" id="logo_in_modalregistration">
+			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal">
+          					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
+        				</button>
+
+			      	</div>
+
+			      	<div class="modal-body" id="body_FAQ">
+			        	
+			      		<div class="container" id="icons">
+			      			
+
+
+			      		</div>
+
+			      		<div class="container">
+			      			
+			      			<h4 class="headers_in_FAQ"> О проекте FROSTBETS.COM </h4>
+			      			<p class="text_in_FAQ"> Сайт представляет собой биржу ставок, на которой любой игрок играет против других игроков и может поставить условные единицы “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> на победу одной из двух команд. Если вы разбираетесь в Counter-Strike: Global Offensive и можете предсказывать результаты матчей, то наш сайт предоставляет Вам прекрасный способ заработать на своих знаниях и опыте по Counter-Strike: Global Offensive. </p>
+
+			      		</div>
+
+			      		<div class="container">
+			      		
+			      			<h4 class="headers_in_FAQ"> Часто задаваемые вопросы </h4>
+			      			<h5 class="headers_in_FAQ"> Как это работает? </h5>
+			      			<div class="row">
+			      				
+			      				<div class="col-6 col-md-4">
+			      					
+			      					<img src="media/1.png" class="numbers_in_FAQ">
+			      					<div class="text_numbers"> 
+			      						<p class="text_in_FAQ"> Вы можете выбрать любой удобный способ пополнения. Пополняя счёт вам зачисляются виртуальная валюта “Снежинки” <br/>
+			      						1 RUB = 1 <img src="media/snowflake.png" id="snowflake" class="text-center">
+			      						</p> 
+			      					</div>
+
+			      				</div>
+
+			      				<div class="col-6 col-md-4">
+			      					
+			      					<img src="media/2.png" class="numbers_in_FAQ">
+			      					<div class="text_numbers"> <p class="text_in_FAQ"> Выбираем матч между двумя командами на главной странице. </p> </div>
+
+			      				</div>
+
+			      				<div class="col-6 col-md-4">
+			      					
+			      					<img src="media/3.png" class="numbers_in_FAQ">
+			      					<div class="text_numbers"> <p class="text_in_FAQ"> Нажимаем на название или логтип команды на которую хотим поставить, и делаем на нее ставку. Можно поставить любое количество <img src="media/snowflake.png" id="snowflake" class="text-center"> на эту команду. </p> </div>
+
+			      				</div>
+
+			      				<div class="col-6 col-md-4">
+			      					
+			      					<img src="media/4.png" class="numbers_in_FAQ">
+			      					<div class="text_numbers"> <p class="text_in_FAQ"> Дожидаемся конца матча и  узнаем результат на странице ставки. </p> </div>
+
+			      				</div>
+
+			      				<div class="col-6 col-md-4">
+			      					
+			      					<img src="media/5.png" class="numbers_in_FAQ">
+			      					<div class="text_numbers"> <p class="text_in_FAQ"> Система делит “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> , поставленные на проигравшую команду, между людьми, поставившими на победившую команду, пропорционально сделанным ими ставками. </p> </div>
+
+			      				</div>
+
+			      				<div class="col-6 col-md-4">
+			      					
+			      					<img src="media/6.png" class="numbers_in_FAQ">
+			      					<div class="text_numbers"> <p class="text_in_FAQ"> Система удерживает комиссию n% с каждого выигрыша. После завершения матча вы можете перевести “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> в валюту и забрать банк </p> </div>
+
+			      				</div>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Конфидециальность </h5>
+			      				<p class="text_in_FAQ"> Мы не храним какие-либо данные о пользователях, кроме логина и пароля от сайта FROSTBETS.COM. Ваш аватар и никнейм доступен каждому пользователю. FROSTBETS.COM не является аффилированным лицом компании VALVE и Counter-Strike:Global Offensive </p>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Виртуальная валюта не была зачислена </h5>
+			      				<p class="text_in_FAQ"> Валюта на счет поступает почти мгновенно, после оплаты. В редких случаях возможны задержки со стороны платежной системы. Не стоит беспокоиться, баланс обязательно поступит. Если через 24 часа Вы так и не получили “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> на счёт, то стоит обратиться в поддержку сайта, Мы обязательно Вам поможем! </p>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Деньги не пришли на счёт после вывода </h5>
+			      				<p class="text_in_FAQ"> Процесс обработки заявки на вывод обычно занимает менее часа, но в некоторых ситуациях может занять до 	3 рабочих дней. Вывод производится на кошелёк WebMoney, QIWI, Яндекс.Деньги, Visa или MasterCard. 		Вывод на другие платёжные системы не производится. </p>
+
+								<p class="text_in_FAQ" style="text-align: center;"> ! В случае указания неправильного номера кошелька средства не возвращаются. ! </p> 
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Поставил ставку по ошибке, что делать? </h5>
+			      				<p class="text_in_FAQ"> Отмена ставок невозможна по техническим причинам. Пользователи влияют на коэффициенты, которые генерируются после каждой сделанной ставки. Возможны переносы игр: как на время раньше, так и позже, будьте внимательны. </p>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Как работают коэффициенты? </h5>
+			      				<p class="text_in_FAQ"> Коэффициент - числовой множитель, используемый при выплате выигрышной ставки. При ставке 200 <img src="media/snowflake.png" id="snowflake" class="text-center"> на коэффициент 2.000, в случае выигрыша вы получите 400 (которые включают в себя сумму ставки) </p>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Что такое “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> ? </h5>
+			      				<p class="text_in_FAQ"> Снежинки <img src="media/snowflake.png" id="snowflake" class="text-center"> - это виртуальная игровая валюта не имеющая физической ценности. </p>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Ко мне в Steam / VK добавился Модератор / Администратор сайта, что делать в таком случае? </h5>
+			      				<p class="text_in_FAQ"> Это мошенник, будьте бдительны и не попадитесь на их уловки! <strong> МЫ НЕ ДОБАВЛЯЕМ В СТИМЕ! ЭТО ВСЕ ОБМАН! У ВАС УКРАДУТ ВАШИ ПРЕДМЕТЫ / ДЕНЬГИ! </strong> У нас нет НИКАКИХ работников в Стиме. Единственное и правильное решение в таком случае, заблокировать мошенника </p>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h5 class="headers_in_FAQ"> Как работает служба поддержки? Как долго ждать ответ? </h5>
+			      				<p class="text_in_FAQ"> Наша служба поддержки работает круглосуточно. Если Вам нужна помощь – сформируйте соответсвующий запрос на странице ТЕХ.ПОДДЕРЖКИ. Как правило, мы отвечаем в течении 60 минут, но возможны более 	длительные сроки из-за большой очереди обращений, выходных или праздничных дней. </p>
+
+			      			</div>
+
+			      			<div class="container">
+			      				
+			      				<h4 class="headers_in_FAQ"> <strong> Если Вы не нашли ответа на свой вопрос, то напишите в службу поддержки сайта, Вам обязательно помогут! </strong> </h4>
+
+			      			</div>
+
+			      		</div>
+
+			     	</div>
+
+			    </div>
+			</div>
+		</div>
+
+		<!-- Конфиденциальность -->
+		<div class="modal fade" id="modal_confidentiality" tabindex="-1" role="dialog" aria-labelledby="agreement" aria-hidden="true">
+
+			<div class="modal-dialog modal-lg" role="document">
+
+			    <div class="modal-content">
+
+			    	<div class="modal-header">
+
+			    		<div class="col-12 text-center" id="text_agreement"> Конфиденциальность </div>
+			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal_registration">
+          					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
+        				</button>
+
+			      	</div>
+
+			      	<div class="modal-body" id="modal_body_confidentiality">
+			        	
+			      		<div class="container">
+			      			
+			      			<p> Просим Вас знакомиться с правилами обработки персональных данных о посетителях и пользователях сервиса <u>Frostbets.com</u> </p>
+
+			      		</div>
+
+			      		<div class="container">
+			      			
+			      			<p> Под персональными данными понимается информация, используемая с целью установления чьей-либо личности, в том числе Ф.И.О., адрес электронном почты, телефон, и т.п. Предоставляя персональные данные, вы даете согласие на их передачу, хранение и обработку. </p>
+
+			      		</div>
+
+			      		<div class="container">
+
+			      			<p> Регистрируясь на сайте <u>Frostbets.com</u> Вы соглашаетесь с положениями Политики конфиденциальности, в которой описаны принципы обработки ваших данных, включая следующие ключевые моменты: </p>
+			      			<p> - Адрес электронной почты (e-mail). Будет использоваться Вами для входа на сайт и восстановления пароля в случаи его утери. Данные об электронной почте не передаются третьим лицам; </p>
+			      			<p> - Данные о ваших посещениях сайта, в том числе, данные о местонахождении, IP-адрес, операционной системе, идентификационный код устройства (id материнской платы). Информация используется исключительно для анализа и поддержания качественной работы сайта; </p>
+			      			<p> - Информация о файлах cookie. Под файлом cookie понимается небольшой текстовый документ, формируемый сайтом через используемый вами браузер и расположенный на жестком диске вашего устройства. Данные файлы не содержат личных сведений о вас и используются сервисом <u>Frostbets.com</u> исключительно для упрощения пользования сайтом и быстрого получения статистических данных (загрузка изображений, т.д). </p>
+			      			<h4 class="headers_in_FAQ"> <strong> Пользуясь сервисом <u>Frostbets.com</u>, вы принимаете условия, описанные выше. </strong> </h4>
+			      			
+			      		</div>
+
+			      		<div class="container">
+
+			      			<p> По вопросам, связанным с обработкой персональной информации вы можете обратиться на адрес электронной почты <u>frostbetssupport@gmail.com</u> </p>
+			      			
+			      		</div>
+
+			      	</div>
+			    </div>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="js/control_contact.js"></script>
+		<script src="https://unpkg.com/ionicons@4.2.0/dist/ionicons.js"></script>
+	</body>
+</html>
