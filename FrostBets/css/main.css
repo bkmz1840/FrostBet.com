@@ -2,7 +2,9 @@ body {
 	margin: 0;
 	background-color: #142B3C;
 }
-
+.display_none{
+	display: none;
+}
 #pre_header {
 	background-color: #fff;
 }
