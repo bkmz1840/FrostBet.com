@@ -12,22 +12,21 @@ $("#btn_login").click(function(){
                 success: function(data){  
                     if(data == 1){
                         // проблема с логином 
-                        $('#login_not_found').removeClass('display_none');
-                        $('#incorrect_password').addClass('display_none');
+                        $('#login_error').text('Неправильный логин');
+
                        
                     }
 
                     if(data == 2){
                           // проблема с паролем 
-                        $('#incorrect_password').removeClass('display_none');
-                        $('#login_not_found').addClass('display_none');
+                        $('#login_error').text('Неправильный пароль');
                         
 
                     }
 
                     if(data == 0){ 
                         //Какая-нибудь красота всплывет
-                        
+
                         setTimeout('location.reload()', 1300);                        
                     }
 
