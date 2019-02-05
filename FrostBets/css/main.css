@@ -2,9 +2,9 @@ body {
 	margin: 0;
 	background-color: #142B3C;
 }
-.display_none{
-	display: none;
-}
+
+.display_none{ display: none; }
+
 #pre_header {
 	background-color: #fff;
 }
@@ -74,15 +74,15 @@ nav {
 	border-right: 1px solid #fff;
 }
 
-#input1::-moz-placeholder, #input2::-moz-placeholder {
+#login_log_in::-moz-placeholder, #password_log_in::-moz-placeholder {
 	color: #000;
 }
 
-#input1::-webkit-input-placeholder, #input2::-webkit-input-placeholder {
+#login_log_in::-webkit-input-placeholder, #password_log_in::-webkit-input-placeholder {
 	color: #000;
 }
 
-#input1, #input2 {
+#login_log_in, #password_log_in {
 	height: 25px;
 	border: 2px solid #000;
 	border-radius: 3px;
@@ -96,7 +96,7 @@ nav {
    color: #000; 
 }
 
-#input1:focus, #input2:focus {
+#login_log_in:focus, #password_log_in:focus {
 	box-shadow: 0 0 20px #B4E9F1;
 	-webkit-box-shadow: 0 0 20px #B4E9F1;
 }
@@ -110,6 +110,12 @@ nav {
 }
 
 #login_error {
+	height: 20px;
+	text-align: center;
+	font-size: 0.9em;
+	color: #00D0D8;
+}
+#password_error {
 	height: 20px;
 	text-align: center;
 	font-size: 0.9em;
