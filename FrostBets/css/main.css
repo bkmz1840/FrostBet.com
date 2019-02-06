@@ -51,7 +51,7 @@ nav {
 .elems_in_header {
 	border-right: 1px solid #7A94A9;
 	margin-top: 20px;
-	padding: 5px 3px 5px 5px;  
+	padding: 5px 3px 5px 5px;
 }
 
 .ion-ios-help-outline {
@@ -63,7 +63,7 @@ nav {
 	color: #B4E9F1;
 	text-decoration: none;
 	margin-right: 5px;
-	outline: none; 
+	outline: none;
 }
 
 .link:hover, #fargot_password:hover {
@@ -93,7 +93,7 @@ nav {
    padding: 2px 2px 3px 5px;
    outline: none;
    margin-right: 5px;
-   color: #000; 
+   color: #000;
 }
 
 #login_log_in:focus, #password_log_in:focus {
@@ -185,7 +185,7 @@ nav {
 
 .modal-header {
 	background-color: #3F637F;
-	padding: 0 10px 0 20px; 
+	padding: 0 10px 0 20px;
 }
 
 #body_modal_contact {
@@ -243,20 +243,23 @@ main {
 }
 
 footer {
+	position: absolute;
+	bottom: 0;
 	background-color: #C0D7DA;
 	border-bottom: 5px solid #3F637F;
 }
 
-.container-fluid {
-	padding: 0;
+#footer_header {
+	background-color: #142B3C;
 }
 
-#footer_header {
-	background-image: url("../media/clouds_in_footer.png");
-	background-size: cover;
-	background-position: bottom;
-	background-color: #142B3C;
-	height: 110px;
+#footer_header img {
+	width: 100%;
+	height: auto;
+}
+
+.container-fluid {
+	padding: 0;
 }
 
 #footer_main {
@@ -279,7 +282,7 @@ footer {
 }
 
 .text_in_footer {
-	color: #37566E;  
+	color: #37566E;
 }
 
 #label_btn_contact, #social_in_footer {
@@ -353,7 +356,7 @@ footer {
 #btn_contact:active {
 	box-shadow: 0 0 0px #fff;
 	border-color: #36566E;
-	background-color: #CACACA; 
+	background-color: #CACACA;
 }
 
 #textarea_for_contact {
@@ -377,7 +380,7 @@ footer {
 }
 
 #div_hello {
-	margin-right: 3px; 
+	margin-right: 3px;
 	margin-left: 3px;
 	color: #AECBE1;
 }
@@ -414,12 +417,12 @@ footer {
 
 #balance span {
 	color: #fff;
-	font-weight: 500; 
+	font-weight: 500;
 }
 
 #snowflake {
 	height: 15px;
-	margin-bottom: 3px; 
+	margin-bottom: 3px;
 }
 
 #btn_other_in_header {
@@ -433,7 +436,7 @@ footer {
 
 .dropdown-menu {
 	position: relative;
-	margin-top: 3px; 
+	margin-top: 3px;
 	left: -19px;
 	background-color: #427295;
 	border: 2px solid #FFB207;
@@ -458,7 +461,7 @@ footer {
 }
 
 #text_and_numbers_in_faq {
-	margin-left: 5px; 
+	margin-left: 5px;
 }
 
 .headers_in_FAQ {
@@ -475,7 +478,7 @@ footer {
 }
 
 .text_numbers {
-	padding-left: 30px; 
+	padding-left: 30px;
 }
 
 #text_registration, #text_agreement {
@@ -617,7 +620,7 @@ footer {
 
 #games a:hover {
 	background-color: #285C82;
-	border-bottom: 2px solid #629FCA; 
+	border-bottom: 2px solid #629FCA;
 }
 
 #choose_game_index {
@@ -636,7 +639,7 @@ footer {
 
 #games_index a:hover {
 	background-color: #285C82;
-	border-bottom: 2px solid #629FCA; 
+	border-bottom: 2px solid #629FCA;
 }
 
 #btn_choose_game_index {
