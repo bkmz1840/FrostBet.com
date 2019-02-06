@@ -1,164 +1,40 @@
 .bet {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	height: 120px;
-	width: 340px;
-	background-color: #335169;
-	margin-bottom: calc(165px - 12vw);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 220px;
+  background-image: url(../media/table_background.png);
+  background-size: cover;
+  border: 3px solid #3D607B;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
 }
 
-.bet p {
-	color: #ACC7DC;
-	text-align: center;
-	font-weight: 500;
-	font-size: 0.9em;
-	margin: 0;
+.bet_head, .bet_foot {
+  display: flex;
+	max-height: 25px;
+  max-width: 208px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid #3D607B;
+  padding: 0 5px 0 5px;
 }
 
-
-.l_logo {
-	width: 60px; 
-	height: 0;
-	border: 60px solid transparent;
-	border-bottom-color: #437396;
-	position: relative;
-	top: -60px;
-	left: -60px;
+.bet_head {
+  border-top: none;
 }
 
-.l_logo:after {
-	content: "";
-	width: 0; 
-	height: 0;
-	position: absolute; 
-	left: -60px; 
-	top: 60px;
-	border: 60px solid transparent;
-	border-top-color: #437396;
+.bet_foot {
+  border-bottom: none;
 }
 
-.l_logo a, .r_logo a {
-	position: relative;
-	top: 38px;
-	left: -40px;
-	z-index: 1000;
-}
-
-.l_team_name, .r_team_name {
-	width: 0; height: 0;
-	border-left: 60px solid transparent;
-	border-right: 60px solid transparent;
-	border-bottom: 60px solid #396584;
-	position: relative;
-	top: -60px;
-}
-
-.l_team_name a, .r_team_name a {
-	color: #fff;
-	text-decoration: none;
-	position: relative;
-	top: 30px;
-	left: -30px;
-}
-
-.r_logo {
-	width: 60px; 
-	height: 0;
-	border: 60px solid transparent;
-	border-bottom-color: #437396;
-	position: relative;
-	top: -60px;
-	left: 60px;
-}
-
-.r_logo:after {
-	content: "";
-	width: 0; 
-	height: 0;
-	position: absolute; 
-	left: -60px; 
-	top: 60px;
-	border: 60px solid transparent;
-	border-top-color: #437396;
-}
-
-.coef_bet {
-	height: 40px;
-	background-image: url("../media/vs.png");
-	background-position: center;
-	background-repeat: no-repeat;
-	margin-top: 5px;
-	margin-bottom: 10px;
-}
-
-.coef_bet div {
-	width: 50px;
-}
-
-.l_team_coef, .r_team_coef {
-	height: 30px;
-	background-color: #316892;
-	border: 2px solid #75B7E9;
-	padding: 0 10px 0 10px;
-	color: #ACC7DC;
-	text-decoration: none; 
-	font-weight: 500;
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   -khtml-border-radius: 20px;
-}
-
-.l_team_coef {
-	z-index: 1010;
-	position: relative;
-	left: -71px;
-}
-
-.r_team_coef {
-	z-index: 1010;
-	position: relative;
-	top: -30px;
-	right: -150px;
-}
-
-.l_team_coef:hover, .r_team_coef:hover {
-	color: #BC89E6;
-	-webkit-box-shadow: 0 0 10px rgba(188,214,235, 1);
-    box-shadow: 0 0 10px rgba(188,214,235, 1);
-}
-
-#bets, #bets div {
-	padding: 0;
-}
-
-#bets {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-column-gap: 120px;
-	grid-row-gap: 10px;
-	justify-items: center;
-	align-items: center;
-}
-
-#bets_name {
-	height: 120px;
-	width: 340px;
-	grid-column-start: 2;
-}
-
-#bets_name h1 {
-	color: #fff;
-	text-align: center;
-	margin-bottom: 0;
-	margin-right: 10px;
-}
-
-#bets_name p {
-	color: #fff;
-	text-align: center;
-	margin-right: 10px;
+.bet_head p, .bet_foot p {
+  font-family: 'Russo One';
+  text-align: center;
+  color: #3D607B;
 }
 
 #header_bet {
@@ -181,8 +57,8 @@
 
 #info_about_bet {
 	color: #fff;
-	margin-top: 5px; 
-	margin-bottom: 25px; 
+	margin-top: 5px;
+	margin-bottom: 25px;
 }
 
 #body_bet {

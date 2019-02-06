@@ -177,177 +177,36 @@
 <!-- Сам сайт -->
 <main class="container-fluid">
 
-    <div class="container col-12" id="prebets">
+  <div class="container col-12" id="prebets">
 
 
     </div>
 
-    <div class="row mt-2" style="margin: 0;" id="main">
+    <div id="bets">
 
-        <div class="col-0 col-sm-1 col-lg-2"></div>
+      <div class="col-0 col-md-3">
+      </div>
 
-        <div class="col-12 col-sm-10 col-lg-8 row" id="bets">
-            <div class="col-6 column" id="l_bet">
+      <div class="col-12 col-md-6">
 
-                <div class="bet">
-                    <div class="column">
-                        <div class="l_logo">
-                            <a href="#"><img src="media/mouslogo.png"></a>
-                        </div>
-                        <div class="l_team_name">
-                            <a href="#"></a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <p> ESL Pro League </p>
-                        <p> <ion-icon name="time"></ion-icon> 1:08:59</p>
-                        <div class="row coef_bet">
-                            <a href="#" class="l_team_coef">3.26</a>
-                            <div></div>
-                            <a href="#" class="r_team_coef">1.56</a>
-                        </div>
-                        <p>BO3</p>
-                    </div>
-                    <div class="column">
-                        <div class="r_logo">
-                            <a href="#"><img src="media/fnaticlogo.png"></a>
-                        </div>
-                        <div class="r_team_name">
-                            <a href="#"> </a>
-                        </div>
-                    </div>
-                </div>
+        <!-- Ставка -->
+        <div class="bet">
+          <div class="bet_head">
+            <p> Faceit Major </p>
+          </div>
 
-                <div class="bet">
-                    <div class="column">
-                        <div class="l_logo">
-                            <a href="#"><img src="media/mouslogo.png"></a>
-                        </div>
-                        <div class="l_team_name">
-                            <a href="#"></a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <p> ESL Pro League </p>
-                        <p> <ion-icon name="time"></ion-icon> 1:08:59</p>
-                        <div class="row coef_bet">
-                            <a href="#" class="l_team_coef">3.26</a>
-                            <div></div>
-                            <a href="#" class="r_team_coef">1.56</a>
-                        </div>
-                        <p>BO3</p>
-                    </div>
-                    <div class="column">
-                        <div class="r_logo">
-                            <a href="#"><img src="media/fnaticlogo.png"></a>
-                        </div>
-                        <div class="r_team_name">
-                            <a href="#"> </a>
-                        </div>
-                    </div>
-                </div>
+          <div class="bet_body">
+          </div>
 
-                <div class="bet">
-                    <div class="column">
-                        <div class="l_logo">
-                            <a href="#"><img src="media/mouslogo.png"></a>
-                        </div>
-                        <div class="l_team_name">
-                            <a href="#"></a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <p> ESL Pro League </p>
-                        <p> <ion-icon name="time"></ion-icon> 1:08:59</p>
-                        <div class="row coef_bet">
-                            <a href="#" class="l_team_coef">3.26</a>
-                            <div></div>
-                            <a href="#" class="r_team_coef">1.56</a>
-                        </div>
-                        <p>BO3</p>
-                    </div>
-                    <div class="column">
-                        <div class="r_logo">
-                            <a href="#"><img src="media/fnaticlogo.png"></a>
-                        </div>
-                        <div class="r_team_name">
-                            <a href="#"> </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="col-6 column" id="r_bet">
-
-                <div id="bets_name">
-                    <h1>LIVE</h1>
-                    <p>games now</p>
-                </div>
-
-                <div class="bet">
-                    <div class="column">
-                        <div class="l_logo">
-                            <a href="#"><img src="media/mouslogo.png"></a>
-                        </div>
-                        <div class="l_team_name">
-                            <a href="#"></a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <p> ESL Pro League </p>
-                        <p> <ion-icon name="time"></ion-icon> 1:08:59</p>
-                        <div class="row coef_bet">
-                            <a href="#" class="l_team_coef">3.26</a>
-                            <div></div>
-                            <a href="#" class="r_team_coef">1.56</a>
-                        </div>
-                        <p>BO3</p>
-                    </div>
-                    <div class="column">
-                        <div class="r_logo">
-                            <a href="#"><img src="media/fnaticlogo.png"></a>
-                        </div>
-                        <div class="r_team_name">
-                            <a href="#"> </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bet">
-                    <div class="column">
-                        <div class="l_logo">
-                            <a href="#"><img src="media/mouslogo.png"></a>
-                        </div>
-                        <div class="l_team_name">
-                            <a href="#"></a>
-                        </div>
-                    </div>
-                    <div class="column">
-                        <p> ESL Pro League </p>
-                        <p> <ion-icon name="time"></ion-icon> 1:08:59</p>
-                        <div class="row coef_bet">
-                            <a href="#" class="l_team_coef">3.26</a>
-                            <div></div>
-                            <a href="#" class="r_team_coef">1.56</a>
-                        </div>
-                        <p>BO3</p>
-                    </div>
-                    <div class="column">
-                        <div class="r_logo">
-                            <a href="#"><img src="media/fnaticlogo.png"></a>
-                        </div>
-                        <div class="r_team_name">
-                            <a href="#"> </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+          <div class="bet_foot">
+            <p> 01:02:03 </p>
+          </div>
         </div>
 
-        <div class="col-0 col-sm-1 col-lg-2"></div>
+      </div>
+
+      <div class="col-0 col-md-3">
+      </div>
 
     </div>
 
