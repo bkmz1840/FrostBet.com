@@ -184,7 +184,7 @@
 
     <div id="bets">
 
-      <div class="col-0 col-md-3">
+      <div id="main_left">
       </div>
 
       <div class="col-12 col-md-6">
@@ -192,10 +192,20 @@
         <!-- Ставка -->
         <div class="bet">
           <div class="bet_head">
-            <p> Faceit Major </p>
+            <div class="text-wrap">
+              <p> Faceit Major </p>
+            </div>
           </div>
 
           <div class="bet_body">
+            <div class="l_team">
+              <img src="media/mousesport.png">
+            </div>
+            <div class="bet_coef_and_vs">
+            </div>
+            <div class="r_team">
+              <img src="media/fnatic.png">
+            </div>
           </div>
 
           <div class="bet_foot">
@@ -205,7 +215,7 @@
 
       </div>
 
-      <div class="col-0 col-md-3">
+      <div id="main_right">
       </div>
 
     </div>

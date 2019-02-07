@@ -37,6 +37,27 @@
   color: #3D607B;
 }
 
+.bet_body {
+  display: flex;
+  justify-content: space-between;
+  height: 164px;
+  width: 214px;
+  padding: 5px 10px 5px 10px;
+}
+
+.l_team img, .r_team img {
+  height: 154px;
+}
+
+.bet_coef_and_vs {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 90px;
+  height: 104px;
+  margin-top: 15px;
+}
+
 #header_bet {
 	background-color: #2C506C;
 }
