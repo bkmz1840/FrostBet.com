@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	var width = 0, option = '', scroll = 0, choose_game = true, choose_game_index = true;
+	var width = 0, option = '', scroll = 0, choose_game = true, choose_game_index = true, em = 1.0;
 	width = $(window).width();
 		if (width <= 974) {
 			$('.elems_in_header').css({'border-right':'none', 'margin-top':'10px'});
@@ -77,7 +77,7 @@ $(document).ready(function(){
 			$('.main_table').css({'border-left':'2.5vw solid transparent'});
 			$('.clock').css({'border-left':'2.5vw solid transparent'});
 			$('#time').css({'border-left':'1.8vw solid transparent'});
-		}		
+		}
 	});
 
 	$(window).scroll(function() {
@@ -149,7 +149,7 @@ $(document).ready(function(){
 		}
 	});
 
-	
+
 	$('#btn_choose_game_index').click(function(){
 		if(choose_game_index) {
 			choose_game_index = false;

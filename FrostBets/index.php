@@ -178,21 +178,51 @@
 <!-- Сам сайт -->
 <main class="container-fluid">
 
-    <div class="container col-12" id="prebets">
+  <div class="container col-12" id="prebets">
 
 
     </div>
 
-    <div class="row mt-2" style="margin: 0;" id="main">
+    <div id="bets">
 
-        <div class="col-0 col-sm-1 col-lg-2"></div>
+      <div class="col-0 col-md-3" id="main_left">
+      </div>
 
-        <div class="col-12 col-sm-10 col-lg-8 row" id="bets">
+      <div class="col-12 col-md-6">
 
+        <!-- Ставка -->
+        <div class="bet">
+          <div class="bet_head">
+            <div class="text-wrap" id="tournament_name">
+              <p> Faceit Major </p>
+            </div>
+          </div>
 
+          <div class="bet_body">
+            <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
+              <img src="media/mousesport.png">
+            </a>
+            <div class="bet_coef_and_vs">
+              <a href="#" class="l_coef" data-toggle="modal" data-target="#modal_bet"> 3.82 </a>
+              <div class="vs">
+                <span> VS </span>
+              </div>
+              <a href="#" class="r_coef" data-toggle="modal" data-target="#modal_bet"> 1.56 </a>
+            </div>
+            <a href="#" class="r_team" data-toggle="modal" data-target="#modal_bet">
+              <img src="media/fnatic.png">
+            </a>
+          </div>
+
+          <div class="bet_foot">
+            <p> 01:02:03 </p>
+          </div>
         </div>
+        
+       </div>
 
-        <div class="col-0 col-sm-1 col-lg-2"></div>
+      <div class="col-0 col-md-3" id="main_right">
+      </div>
 
     </div>
 
@@ -246,6 +276,81 @@
     </div>
 
 </footer>
+
+<!-- Окно со ставкой -->
+		<div class="modal fade" id="modal_bet" tabindex="-1" role="dialog" aria-labelledby="Bet" aria-hidden="true">
+
+			<div class="modal-dialog" role="document">
+
+			    <div class="modal-content">
+
+			    	<div class="modal-header" id="header_bet">
+
+			    		<div class="col-3" id="time_to_start_match">
+			    			<p> 06:20:59 </p>
+			    		</div>
+
+			    		<div class="col-6 text-center" id="info_about_bet">
+			    			<h6 id="modal_tournament_name"> ESL Pro League </h6>
+			    			<h6> BO3 </h6>
+			    			<h6> Feb. 24 17:00 </h6>
+			    		</div>
+
+			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal">
+          					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
+        				</button>
+
+			      	</div>
+
+			      	<div class="modal-body pl-0 pl-sm-3 pr-0 pr-sm-3" id="body_bet">
+
+			      		<div id="type_of_bet">
+			      			<h6> Вид ставки </h6>
+			      		</div>
+
+			      		<div class="text-center" id="bet_on">
+			      			<h6> <span> &#9204</span>Победа в серии BO3<span>&#9205 </span> </h6>
+			      		</div>
+
+			      		<div class="text-center" id="choose_of_command">
+				      		<div class="ml-0 ml-sm-3" id="modal_l_team">
+				      			<div id="modal_l_team_name"> <a href="#"> Mouse </a> </div>
+				      			<a href="#" id="modal_l_team_logo"> <img src="media/mousesports.png"> </a>
+				      			<ion-icon id="checkmark_l" name="checkmark-circle"></ion-icon>
+				      		</div>
+				      		<div id="coef_l_team"> <a href="#" > 1.25 </a> </div>
+
+				      		<div id="modal_vs"> <p> VS </p> </div>
+
+							<div id="coef_r_team"> <a href="#" > 3.26 </a> </div>
+				      		<div class="mr-0 mr-sm-3" id="modal_r_team">
+				      			<div id="modal_r_team_name"> <a href="#"> Fnatic </a> </div>
+				      			<a href="#" id="modal_r_team_logo"> <img src="media/fnatic.png"> </a>
+				      			<ion-icon id="checkmark_r" name="checkmark-circle"></ion-icon>
+				      		</div>
+				      	</div>
+
+				      	<div class="container" id="choose_of_sum">
+				      		<label> Сумма ставки: </label>
+				      		<input class="ml-3" type="number" name="sum_of_bet" placeholder="Введите сумму...">
+				      		<img src="media/snowflake.png" id="snowflake" class="text-center">
+				      	</div>
+
+				      	<div class="container">
+				      		<p id="min_sum_of_bet"> Минимальная сумма ставки - 10 <img src="media/snowflake.png" id="snowflake" class="text-center"> </p>
+				      		<p id="your_winnings"> Ваш потенциальный выигрыш: <span id="n"> n </span> <img src="media/snowflake.png" id="snowflake" class="text-center"> (x<span id="coef">3.26</span>) </p>
+				      	</div>
+
+			     	</div>
+
+			      	<div class="modal-footer" id="footer_bet">
+
+			      		<button class="ml-auto mr-auto" id="btn_do_bet"> Сделать ставку </button>
+
+			      	</div>
+			    </div>
+			</div>
+		</div>
 
 <!-- Модальное окно регистрации -->
 <div class="modal fade" id="modal_registration" tabindex="-1" role="dialog" aria-labelledby="form_registration"
@@ -701,5 +806,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/control_registration.js"></script>
 <script type="text/javascript" src="js/control_contact.js"></script>
+<script type="text/javascript" src="js/script_bet.js"></script>
 </body>
 </html>
