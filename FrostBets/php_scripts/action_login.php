@@ -21,7 +21,7 @@ if($user){
     else
         echo "2";
 }
-else 
+else
     echo "1";
 
 

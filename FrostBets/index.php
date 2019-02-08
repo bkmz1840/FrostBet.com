@@ -1,3 +1,4 @@
+<?php require "php_scripts/connection.php" ?>
 <!DOCTYPE html>
 <html>
 
@@ -24,12 +25,15 @@
 
 <!-- Хедер если залогинен -->
 <?php if(isset($_SESSION['logged_user'])) : ?>
+
+
     <nav class="navbar navbar-expand-lg navbar-light col-12" id="head">
         <div class="container">
             <div class="navbar-brand">
                 <img src="media/logo.png" id="logo">
             </div>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -39,7 +43,8 @@
 
                     <li class="nav-item">
 
-                        <div class="elems_in_header"> <a class="link" href="#" id="support_in_header" data-toggle="modal" data-target="#modal_contact"> Техподдержка </a> </div>
+                        <div class="elems_in_header"><a class="link" href="#" id="support_in_header" data-toggle="modal"
+                                                        data-target="#modal_contact"> Техподдержка </a></div>
 
                     </li>
 
@@ -57,8 +62,9 @@
                         <div class="elems_in_header">
                             <div class="row" id="div_hello">
 
-                                <a href="#" id="a_messages"> <img src="media/messages.png" id="messages"> <span class="badge">4</span> </a>
-                                <div id="hello"> Добрый день, Login! </div>
+                                <a href="#" id="a_messages"> <img src="media/messages.png" id="messages"> <span
+                                            class="badge">4</span> </a>
+                                <div id="hello"> Добрый день, <? echo $_SESSION['logged_user']->login ?> </div>
 
                             </div>
 
@@ -70,37 +76,30 @@
 
                         <div class="row" id="balance_and_other">
 
-                            <div id="balance"> Баланс: <span> 100 </span> <img src="media/snowflake.png" id="snowflake" class="text-center"> </div>
+                            <div id="balance"> Баланс:
+                                <span>  <? echo $_SESSION['logged_user']->balance_money ?> </span> <img
+                                        src="media/snowflake.png" id="snowflake" class="text-center"></div>
 
-                            <div class="column">
-                                <div class="row" id="btn_other_in_header">
+                            <div class="row" id="btn_other_in_header">
 
-                                    <button id="btn_input_money"> Внести </button>
+                                <button id="btn_input_money"> Внести</button>
 
-                                    <div class="dropdown show" id="dropdown">
+                                <div class="dropdown show" id="dropdown">
 
-                                        <button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_other_actions"> Мой профиль </button>
+                                    <button class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false" id="btn_other_actions"> Мой профиль
+                                    </button>
 
-                                        <div class="dropdown-menu">
-                                            <a class="dropdown-item" href="#"> История ставок </a>
-                                            <a class="dropdown-item" href="#"> Депозит </a>
-                                            <a class="dropdown-item" href="#"> Вывести </a>
-                                            <a class="dropdown-item" href="#"> Настройки </a>
-                                            <a class="dropdown-item" href="#"> Выход </a>
-                                        </div>
-
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"> История ставок </a>
+                                        <a class="dropdown-item" href="#"> Депозит </a>
+                                        <a class="dropdown-item" href="#"> Вывести </a>
+                                        <a class="dropdown-item" href="#"> Настройки </a>
+                                        <a class="dropdown-item" href="./php_scripts/action_logout.php"> Выход </a>
                                     </div>
 
                                 </div>
-                                <div class="text-right column" id="choose_game">
 
-                                    <div id="games">
-                                        <a href="#" id="csgo"><img src="media/csgo_logo.png"></a>
-                                        <a href="#" id="dota2"><img src="media/dota_logo.png"></a>
-                                    </div>
-                                    <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_choose_game"> Выбрать игру </button>
-
-                                </div>
                             </div>
 
                         </div>
@@ -146,9 +145,11 @@
 
                     <div class="column">
                         <div id="form_login">
-                            <div class="container" id="login_error">Неправильный логин или пароль</div>
-                            <input class="form-control mb-2 mb-sm-0" type="text" placeholder="Логин" name="login" id="input1">
-                            <input class="form-control" type="password" placeholder="Пароль" name="password" id="input2">
+                            <div class="container" id="login_error"></div>
+
+
+                            <input class="form-control mb-2 mb-sm-0" type="text" placeholder="Логин" name="login" id="login_log_in">
+                            <input class="form-control" type="password" placeholder="Пароль" name="password" id="password_log_in">
                             <div class="container"> <a id="fargot_password" href="#" data-toggle="modal" data-target="#modal_fargot_password"> Забыли пароль? </a> </div>
                         </div>
                         <div class="text-right column" id="choose_game_index">
@@ -161,9 +162,9 @@
 
                         </div>
                     </div>
-                    <button class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
 
                 </form>
+                <button class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
                 <button class="btn my-2 my-sm-0" id="btn_registration" data-toggle="modal" data-target="#modal_registration">Регистрация</button>
 
             </div>
@@ -217,8 +218,8 @@
             <p> 01:02:03 </p>
           </div>
         </div>
-
-      </div>
+        
+       </div>
 
       <div class="col-0 col-md-3" id="main_right">
       </div>
@@ -231,7 +232,7 @@
 <footer class="container-fluid">
 
     <!-- Шапка футера -->
-    <div class="container-fluid" id="footer_header"> </div>
+    <div id="footer_header"> <img src="/media/clouds_in_footer.png"> </div>
 
     <!-- Тело футера -->
     <div class="row" id="footer_main">
