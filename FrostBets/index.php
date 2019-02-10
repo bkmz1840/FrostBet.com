@@ -158,13 +158,12 @@
                                 <a href="#" id="csgo"><img src="media/csgo_logo.png"></a>
                                 <a href="#" id="dota2"><img src="media/dota_logo.png"></a>
                             </div>
-                            <button data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_choose_game_index"> Выбрать игру </button>
+                            <a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="btn_choose_game_index"> Выбрать игру </a>
 
                         </div>
                     </div>
-
+                    <button class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
                 </form>
-                <button class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
                 <button class="btn my-2 my-sm-0" id="btn_registration" data-toggle="modal" data-target="#modal_registration">Регистрация</button>
 
             </div>

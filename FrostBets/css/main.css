@@ -689,6 +689,8 @@ footer {
 }
 
 #games_index {
+	position: relative;
+	top: -2px;
 	display: none;
 	flex-direction: column;
 	justify-content: space-around;
@@ -703,14 +705,20 @@ footer {
 }
 
 #btn_choose_game_index {
+	position: relative;
+	top: -2px;
 	width: 200px;
 	background-color: #235172;
 	border-color: #235172;
-	outline: none;
-	padding: 0 10px 0 10px;
+	padding: 0 47px 0 47px;
+	color: #000;
 	font-weight: 500;
 	text-align: center;
+	text-decoration: none;
 	border-top: 1px solid #000;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
 	border-radius: 0 0 10px 10px;
 	-webkit-border-radius: 0 0 10px 10px;
    -moz-border-radius: 0 0 10px 10px;
