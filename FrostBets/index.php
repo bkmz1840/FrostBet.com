@@ -178,50 +178,148 @@
 <!-- Сам сайт -->
 <main class="container-fluid">
 
-  <div class="container col-12" id="prebets">
+    <div class="container col-12" id="prebets">
 
 
     </div>
 
-    <div id="bets">
+    <div class="container-fluid d-flex" id="main_content">
 
-      <div class="col-0 col-md-3" id="main_left">
+      <div class="col-0 col-md-2 col-xl-3 p-0 p-md-1" id="main_left">
       </div>
 
-      <div class="col-12 col-md-6">
-
-        <!-- Ставка -->
-        <div class="bet">
-          <div class="bet_head">
-            <div class="text-wrap" id="tournament_name">
-              <p> Faceit Major </p>
-            </div>
-          </div>
-
-          <div class="bet_body">
-            <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
-              <img src="media/mousesport.png">
-            </a>
-            <div class="bet_coef_and_vs">
-              <a href="#" class="l_coef" data-toggle="modal" data-target="#modal_bet"> 3.82 </a>
-              <div class="vs">
-                <span> VS </span>
-              </div>
-              <a href="#" class="r_coef" data-toggle="modal" data-target="#modal_bet"> 1.56 </a>
-            </div>
-            <a href="#" class="r_team" data-toggle="modal" data-target="#modal_bet">
-              <img src="media/fnatic.png">
-            </a>
-          </div>
-
-          <div class="bet_foot">
-            <p> 01:02:03 </p>
+      <div class="col-12 col-md-8 col-xl-6 p-0" id="bets">
+        <div id="tabs_of_current_matches">
+          <div id="current_matches">
+            <p> <img src="media/live.png" id="live"> Текущие матчи </p>
           </div>
         </div>
-        
-       </div>
+        <div id="tables_of_current_matches">
 
-      <div class="col-0 col-md-3" id="main_right">
+          <!-- Ставка -->
+          <div class="bet">
+            <div class="bet_head">
+              <div class="text-wrap" id="tournament_name">
+                <p> Faceit Major </p>
+              </div>
+            </div>
+            <div class="bet_body">
+              <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/mousesport.png">
+              </a>
+              <div class="bet_coef_and_vs">
+                <a href="#" class="l_coef" data-toggle="modal" data-target="#modal_bet"> 3.82 </a>
+                <div class="vs">
+                  <span> VS </span>
+                </div>
+                <a href="#" class="r_coef" data-toggle="modal" data-target="#modal_bet"> 1.56 </a>
+              </div>
+              <a href="#" class="r_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/fnatic.png">
+              </a>
+            </div>
+            <div class="bet_foot">
+              <p> 01:02:03 </p>
+            </div>
+          </div>
+
+          <div class="bet">
+            <div class="bet_head">
+              <div class="text-wrap" id="tournament_name">
+                <p> BTS RofloTurik </p>
+              </div>
+            </div>
+            <div class="bet_body">
+              <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/mousesport.png">
+              </a>
+              <div class="bet_coef_and_vs">
+                <a href="#" class="l_coef" data-toggle="modal" data-target="#modal_bet"> 10.00 </a>
+                <div class="vs">
+                  <span> VS </span>
+                </div>
+                <a href="#" class="r_coef" data-toggle="modal" data-target="#modal_bet"> 0.00 </a>
+              </div>
+              <a href="#" class="r_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/fnatic.png">
+              </a>
+            </div>
+            <div class="bet_foot">
+              <p> 01:02:03 </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="tabs_of_upcoming_matches">
+          <a class="upcoming_matches" id="tab_1">
+            <p> Ближайшие матчи </p>
+          </a>
+          <a class="finished_matches" id="tab_2">
+            <p> Прошедшие матчи </p>
+          </a>
+        </div>
+        <div id="tables_of_upcoming_matches">
+
+          <div class="bet">
+            <div class="bet_head">
+              <div class="text-wrap" id="tournament_name">
+                <p> Faceit Major </p>
+              </div>
+            </div>
+            <div class="bet_body">
+              <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/mousesport.png">
+              </a>
+              <div class="bet_coef_and_vs">
+                <a href="#" class="l_coef" data-toggle="modal" data-target="#modal_bet"> 3.82 </a>
+                <div class="vs">
+                  <span> VS </span>
+                </div>
+                <a href="#" class="r_coef" data-toggle="modal" data-target="#modal_bet"> 1.56 </a>
+              </div>
+              <a href="#" class="r_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/fnatic.png">
+              </a>
+            </div>
+            <div class="bet_foot">
+              <p> 01:02:03 </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="tables_of_finished_matches">
+          <div class="bet">
+            <div class="bet_head">
+              <div class="text-wrap" id="tournament_name">
+                <p> BTS RofloTurik </p>
+              </div>
+            </div>
+            <div class="bet_body">
+              <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/mousesport.png">
+              </a>
+              <div class="bet_coef_and_vs">
+                <a href="#" class="l_coef" data-toggle="modal" data-target="#modal_bet"> 10.00 </a>
+                <div class="vs">
+                  <span> VS </span>
+                </div>
+                <a href="#" class="r_coef" data-toggle="modal" data-target="#modal_bet"> 0.00 </a>
+              </div>
+              <a href="#" class="r_team" data-toggle="modal" data-target="#modal_bet">
+                <img src="media/fnatic.png">
+              </a>
+            </div>
+            <div class="bet_foot">
+              <p> 01:02:03 </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-0 col-md-2 col-xl-3 p-0 p-md-1" id="main_right">
       </div>
 
     </div>
@@ -235,15 +333,15 @@
     <div id="footer_header"> <img src="/media/clouds_in_footer.png"> </div>
 
     <!-- Тело футера -->
-    <div class="row" id="footer_main">
+    <div class="p-0 p-md-1 row" id="footer_main">
 
-        <div class="container col-6 col-md-4 mb-2 mb-md-0" id="social_in_footer">
+        <div class="container col-6 col-md-4 mb-2 mb-md-0 p-0 p-md-1" id="social_in_footer">
 
             <h4 class="text_in_footer"> Соцальные сети </h4>
 
         </div>
 
-        <div class="container ml-0 mb-2 mb-md-0 col-6 col-md-4" id="information_in_footer">
+        <div class="container ml-0 mb-2 mb-md-0 col-6 col-md-4 p-0 p-md-1" id="information_in_footer">
 
             <div class="text-center">
 
@@ -255,7 +353,7 @@
 
         </div>
 
-        <div class="container col-12 col-md-4" id="contact_with_administration">
+        <div class="container col-12 col-md-4 p-0 p-md-1" id="contact_with_administration">
 
             <div class="text-center">
 
