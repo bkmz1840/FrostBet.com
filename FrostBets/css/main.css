@@ -21,6 +21,9 @@ label.error {
 input.error {
 	box-shadow: 0 0 10px red;
 }
+input.valid {
+	box-shadow: 0 0 10px #42EDA0;
+}
 
 nav {
 	z-index: 1035;
