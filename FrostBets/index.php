@@ -184,13 +184,13 @@
 
     <div class="container-fluid d-flex" id="main_content">
 
-      <div class="col-0 col-md-2 col-xl-3 p-0 p-md-1" id="main_left">
+      <div class="col-0 col-md-1 col-xl-2 p-0 p-md-1" id="main_left">
       </div>
 
-      <div class="col-12 col-md-8 col-xl-6 p-0" id="bets">
+      <div class="col-12 col-md-10 col-xl-8 p-0" id="bets">
         <div id="tabs_of_current_matches">
           <div id="current_matches">
-            <p> <img src="media/live.png" id="live"> Текущие матчи </p>
+            <p> <img src="media/live.png" id="icon_live"> Текущие матчи </p>
           </div>
         </div>
         <div id="tables_of_current_matches">
@@ -251,12 +251,12 @@
         </div>
 
         <div id="tabs_of_upcoming_matches">
-          <a class="upcoming_matches" id="tab_1">
-            <p> Ближайшие матчи </p>
-          </a>
-          <a class="finished_matches" id="tab_2">
-            <p> Прошедшие матчи </p>
-          </a>
+          <button class="upcoming_matches" id="tab_1">
+            <p> <img src="media/upcoming_matces.png" id="icon_upcoming_matces"> Ближайшие матчи </p>
+          </button>
+          <button class="finished_matches" id="tab_2">
+            <p> <img src="media/finished_matches.png" id="icon_finished_matches"> Прошедшие матчи </p>
+          </button>
         </div>
         <div id="tables_of_upcoming_matches">
 
@@ -318,7 +318,7 @@
 
       </div>
 
-      <div class="col-0 col-md-2 col-xl-3 p-0 p-md-1" id="main_right">
+      <div class="col-0 col-md-1 col-xl-2 p-0 p-md-1" id="main_right">
       </div>
 
     </div>
