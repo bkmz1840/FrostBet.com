@@ -141,7 +141,7 @@
 
                 </ul>
 
-                <form class="form-inline my-2 my-lg-0">
+                <form class="form-inline my-2 my-lg-0" method="post">
 
                     <div class="column">
                         <div id="form_login">
@@ -469,7 +469,7 @@
 
             <div class="modal-body" id="modal_body_regestration">
 
-                <form id="form_registration">
+                <form id="form_registration" method = "post">
 
                     <div class="coloumn">
 
