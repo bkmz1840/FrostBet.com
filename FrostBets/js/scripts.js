@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	var width = 0, option = '', scroll = 0, choose_game = true, choose_game_index = true, em = 1.0;
+	$('#tab_2').removeClass('finished_matches').addClass('tab_off');
 	width = $(window).width();
 		if (width <= 974) {
 			$('.elems_in_header').css({'border-right':'none', 'margin-top':'10px'});
@@ -177,5 +178,17 @@ $(document).ready(function(){
 			}
 			$('#games_index').slideUp(300);
 		}
+	});
+	$('#tab_1').click(function(){
+		$('#tab_1').removeClass('tab_off').addClass('upcoming_matches');
+		$('#tab_2').removeClass('finished_matches').addClass('tab_off');
+		$('#tables_of_upcoming_matches').css({'display':'grid'});
+		$('#tables_of_finished_matches').css({'display':'none'});
+	});
+	$('#tab_2').click(function(){
+		$('#tab_1').removeClass('upcoming_matches').addClass('tab_off');
+		$('#tab_2').removeClass('tab_off').addClass('finished_matches');
+		$('#tables_of_upcoming_matches').css({'display':'none'});
+		$('#tables_of_finished_matches').css({'display':'grid'});
 	});
 });

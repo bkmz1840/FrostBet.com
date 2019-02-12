@@ -1,9 +1,42 @@
+html, body {
+	height: 100%;
+}
+
 body {
+	display: flex;
+	flex-direction: column;
 	margin: 0;
 	background-color: #142B3C;
 }
 
-.display_none{ display: none; }
+a.active.focus,
+a.active:focus,
+a.focus,
+a:active.focus,
+a:active:focus,
+a:focus,
+button.active.focus,
+button.active:focus,
+button.focus,
+button:active.focus,
+button:active:focus,
+button:focus,
+.btn.active.focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn:active:focus,
+.btn:focus {
+	outline: 0!important;
+	outline-color: transparent !important;
+	outline-width: 0 !important;
+	outline-style: none !important;
+	box-shadow: 0 0 0 0 rgba(0,123,255,0) !important;
+}
+
+.display_none {
+	display: none;
+}
 
 #pre_header {
 	background-color: #fff;
@@ -226,28 +259,100 @@ label {
 main {
 }
 
-#main {
-	display: flex;
-}
-
-#bets {
-	margin-left: auto;
-	margin-right: auto;
-}
-
 #prebets {
 	height: 200px;
 	margin-top: 80px;
 	background-color: #fff;
 }
 
+#main_content {
+	margin-top: 50px;
+}
+
 #bets {
-	padding: 0;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#tabs_of_current_matches, #tabs_of_upcoming_matches {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	height: 30px;
+	width: 100%;
+}
+
+.tab_off {
+	height: 30px;
+	width: 200px;
+	background-color: #193348;
+	border: none;
+	border-radius: 10px 10px 0 0;
+}
+
+.tab_off p {
+	text-align: center;
+	color: #BCBCBD;
+}
+
+#tabs_of_upcoming_matches a {
+	text-decoration: none;
+}
+
+#current_matches, .upcoming_matches, .finished_matches {
+	height: 30px;
+	width: 200px;
+	background-color: #1B3950;
+	border-top: 2px solid #3D6B8E;
+	border-radius: 10px 10px 0 0;
+}
+
+.upcoming_matches, .finished_matches {
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+#icon_live {
+	height: 15px;
+	width: 15px;
+	margin-bottom: 3px;
+}
+
+#icon_upcoming_matces {
+	height: 15px;
+	width: 15px;
+	margin-bottom: 4px;
+}
+
+#icon_finished_matches {
+	height: 15px;
+	width: 15px;
+	margin-bottom: 4px;
+}
+
+#current_matches p, .upcoming_matches p, .finished_matches p {
+	text-align: center;
+	color: #BCBCBD;
+}
+
+#tables_of_current_matches, #tables_of_upcoming_matches, #tables_of_finished_matches {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 220px);
+	grid-gap: 20px;
+	justify-content: center;
+	background-color: #1B3950;
+	border-radius: 0 10px 10px 10px;
+	padding: 35px;
+	margin-bottom: 50px;
+}
+
+#tables_of_finished_matches {
+	display: none;
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
 	background-color: #C0D7DA;
 	border-bottom: 5px solid #3F637F;
 }
@@ -632,6 +737,8 @@ footer {
 }
 
 #games_index {
+	position: relative;
+	top: -2px;
 	display: none;
 	flex-direction: column;
 	justify-content: space-around;
@@ -646,14 +753,20 @@ footer {
 }
 
 #btn_choose_game_index {
+	position: relative;
+	top: -2px;
 	width: 200px;
 	background-color: #235172;
 	border-color: #235172;
-	outline: none;
-	padding: 0 10px 0 10px;
+	padding: 0 47px 0 47px;
+	color: #000;
 	font-weight: 500;
 	text-align: center;
+	text-decoration: none;
 	border-top: 1px solid #000;
+	border-left: 2px solid #000;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
 	border-radius: 0 0 10px 10px;
 	-webkit-border-radius: 0 0 10px 10px;
    -moz-border-radius: 0 0 10px 10px;

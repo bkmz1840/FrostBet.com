@@ -1,8 +1,5 @@
 $(document).ready(function(){
 	var l_team = false, r_team = false, sum_of_bet = 0, coef;
-	$('#coef_l_team a').html($('.l_coef').html());
-	$('#coef_r_team a').html($('.r_coef').html());
-	$('#modal_tournament_name').html($('#tournament_name').html());
 
 	$('.l_coef').click(function(){
 		l_team = true; r_team = false;
