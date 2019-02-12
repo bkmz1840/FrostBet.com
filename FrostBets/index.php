@@ -479,8 +479,7 @@
                                class="form-control col-md-9 ml-auto mr-auto text-center" id="login_registration"
                                placeholder="Ваш никнейм">
 
-                        <p class="col-12 text-center display_none" id="error_login_php">Такой login уже
-                            зарегестрирован</p>
+                        <p class="col-12 text-center" id="error_login_php"></p>
 
                     </div>
 
@@ -492,8 +491,7 @@
                                class="form-control col-md-9 ml-auto mr-auto text-center mt-3" id="email_registration"
                                placeholder="Ваш Email">
 
-                        <p id="error_email_php" class="col-12 text-center display_none">Такой email уже
-                            зарегестрирован</p>
+                        <p id="error_email_php" class="col-12 text-center"></p>
 
                     </div>
 
@@ -526,7 +524,7 @@
                                                 data-target="#modal_agreement"> соглашения </a> </label>
 
                     </div>
-                    <p id="success_reg" class="display_none">Вы успешно зарегистрированны</p>
+                    <p id="success_reg" class=""></p>
 
             </div>
 

@@ -23,24 +23,24 @@ $("#btn_end_registration").click(function(){
                     success: function(data){  
                         if(data == 1){
                             // проблема с логином 
-                            $('#error_login_php').removeClass('display_none');
-                            $('#success_reg').addClass('display_none');
-                            $('#error_email_php').addClass('display_none');
+                            $('#error_login_php').text('Аккаунт с таким логином уже существует');
+                            $('#success_reg').text('');
+                            $('#error_email_php').text('');
                         }
 
                         if(data == 2){
                               // проблема с емайлом 
-                            $('#error_email_php').removeClass('display_none');
-                            $('#error_login_php').addClass('display_none');
-                            $('#success_reg').addClass('display_none');
+                            $('#error_email_php').text('Аккаунт с таким email уже существует ');
+                            $('#error_login_php').text('');
+                            $('#success_reg').text('');
 
                         }
 
                         if(data == 0){ 
                             // регистрируем 
-                            $('#success_reg').removeClass('display_none');
-                            $('#error_login_php').addClass('display_none');                        
-                            $('#error_email_php').addClass('display_none');
+                            $('#success_reg').text('Вы успешно зарегестрированы');
+                            $('#error_login_php').text('');                        
+                            $('#error_email_php').text('');
                         }
 
                     }
