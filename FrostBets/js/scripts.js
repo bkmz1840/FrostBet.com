@@ -20,17 +20,6 @@ $(document).ready(function(){
 			$('#choose_game_index').css({'top':'13px', 'right':'0'});
 			$('#games_index').css({'margin-left':'185px'});
 		}
-		if (width <= 680) {
-			$('.main_table').css({'border-right':'none'});
-			$('.main_table').css({'border-left':'none'});
-			$('.clock').css({'border-left':'none'});
-			$('#time').css({'border-left':'none'});
-		} else {
-			$('.main_table').css({'border-right':'2.5vw solid transparent'});
-			$('.main_table').css({'border-left':'2.5vw solid transparent'});
-			$('.clock').css({'border-left':'2.5vw solid transparent'});
-			$('#time').css({'border-left':'1.8vw solid transparent'});
-		}
 	scroll = $(window).scrollTop();
 		if(scroll != 0) {
 			$('#pre_header').css({'display':'none'});
@@ -67,17 +56,6 @@ $(document).ready(function(){
 			$('#fargot_password').css({'position':'relative'});
 			$('#choose_game_index').css({'top':'13px', 'right':'0'});
 			$('#games_index').css({'margin-left':'185px'});
-		}
-		if (width <= 680) {
-			$('.main_table').css({'border-right':'none'});
-			$('.main_table').css({'border-left':'none'});
-			$('.clock').css({'border-left':'none'});
-			$('#time').css({'border-left':'none'});
-		} else {
-			$('.main_table').css({'border-right':'2.5vw solid transparent'});
-			$('.main_table').css({'border-left':'2.5vw solid transparent'});
-			$('.clock').css({'border-left':'2.5vw solid transparent'});
-			$('#time').css({'border-left':'1.8vw solid transparent'});
 		}
 	});
 
