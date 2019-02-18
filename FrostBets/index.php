@@ -198,7 +198,7 @@
           <!-- Ставка -->
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap" id="tournament_name">
+              <div class="text-wrap">
                 <p> Faceit Major </p>
               </div>
             </div>
@@ -224,7 +224,7 @@
 
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap" id="tournament_name">
+              <div class="text-wrap">
                 <p> BTS RofloTurik </p>
               </div>
             </div>
@@ -262,7 +262,7 @@
 
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap" id="tournament_name">
+              <div class="text-wrap">
                 <p> Faceit Major </p>
               </div>
             </div>
@@ -291,7 +291,7 @@
         <div id="tables_of_finished_matches">
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap" id="tournament_name">
+              <div class="text-wrap">
                 <p> BTS RofloTurik </p>
               </div>
             </div>
