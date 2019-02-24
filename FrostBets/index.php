@@ -10,11 +10,13 @@
     <link rel="shortcut icon" href="media/icon5.ico">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/match.css">
+    <link rel="stylesheet" type="text/css" href = "css/adm_panel.css">
     <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/jquery.validate.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/match.css">
+    
 
 </head>
 
@@ -162,8 +164,9 @@
 
                         </div>
                     </div>
-                    <button class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
+                    <button type="button" class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
                 </form>
+               
                 <button class="btn my-2 my-sm-0" id="btn_registration" data-toggle="modal" data-target="#modal_registration">Регистрация</button>
 
             </div>
@@ -173,10 +176,53 @@
 
 <!--ajax скрипт-->
 <script type="text/javascript" src="./js/ajax-login.js"></script>
+<?print_r($_SESSION)?>
 
 <!-- Сам сайт -->
 <main class="container-fluid">
 
+<?php if($_SESSION['logged_user']['adm_status']==2) :?>
+
+    <div class="container-fluid d-flex" id="main_content">
+        <div id="adm_panel">
+             <h2>Добавить Матч</h2>
+            <form action="" method ="POST">
+                <p>Название левой команды</p><input type="text" name="left_team" id="left_team">
+                <p>Название правой команды</p><input type="text"name="right_team" id="right_team">
+                <p>Название турнира</p><input type="text" name="tournament_name" id="tournament_name">
+                <p>Дата</p><input type="datetime-local" id="date"><br>
+                <input type="button" value="Загрузить в базу данных" id="upload_match">
+            </form>
+            <p id="upload_res"></p>
+        </div>
+    <script>
+        $("#upload_match").click(function(){
+            var team_right = $("#right_team").val();
+            var team_left = $("#left_team").val();
+            var tournament = $("#tournament_name").val();
+            var date = $("#date").val();
+            
+            console.log(team_right);console.log(team_left);console.log(tournament);console.log(date);
+            $.trim(right_team); $.trim(left_team); $.trim(tournament);
+            
+            $.ajax({
+                url: "php_scripts/action_upload_match.php",
+                type: "POST",
+                data: {team_left: team_left, team_right: team_right, tournament: tournament, date: date},
+                success: function(data){  
+                    if(data == 0){
+                        $('#upload_res').text('Матч успешно добавлен');
+                    }
+                    if(data == 1){
+                        $('#upload_res').text('Произошла ошибка');
+                    }
+                }
+            })
+        });
+     
+    </script>
+    </div>
+<?php else: ?>
     <div class="container col-12" id="prebets">
 
 
@@ -323,6 +369,7 @@
 
     </div>
 
+    <?php endif ?>
 </main>
 
 <!-- Футер -->
