@@ -300,7 +300,7 @@ main {
 	text-decoration: none;
 }
 
-#current_matches, .upcoming_matches, .finished_matches {
+#current_matches, .upcoming_matches, .finished_matches, .admin_panel {
 	height: 30px;
 	width: 200px;
 	background-color: #1B3950;
@@ -308,7 +308,7 @@ main {
 	border-radius: 10px 10px 0 0;
 }
 
-.upcoming_matches, .finished_matches {
+.upcoming_matches, .finished_matches, .admin_panel {
 	border-left: none;
 	border-right: none;
 	border-bottom: none;
@@ -332,7 +332,7 @@ main {
 	margin-bottom: 4px;
 }
 
-#current_matches p, .upcoming_matches p, .finished_matches p {
+#current_matches p, .upcoming_matches p, .finished_matches p, .admin_panel p {
 	text-align: center;
 	color: #BCBCBD;
 }
@@ -348,7 +348,14 @@ main {
 	margin-bottom: 50px;
 }
 
-#tables_of_finished_matches {
+#window_for_admin {
+	background-color: #1B3950;
+	border-radius: 0 10px 10px 10px;
+	padding: 35px;
+	margin-bottom: 50px;
+}
+
+#tables_of_finished_matches, #window_for_admin {
 	display: none;
 }
 
