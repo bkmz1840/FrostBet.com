@@ -198,9 +198,11 @@
           <!-- Ставка -->
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap">
-                <p> Faceit Major </p>
+              <div class="bet_head_left"> </div>
+              <div class="bet_head_center">
+                <p> BTS RofloTurik </p>
               </div>
+              <div class="bet_head_right"> </div>
             </div>
             <div class="bet_body">
               <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
@@ -218,15 +220,21 @@
               </a>
             </div>
             <div class="bet_foot">
-              <p> 01:02:03 </p>
+              <div class="bet_foot_left"> </div>
+              <div class="bet_foot_centre">
+                <p> 01:02:03 </p>
+              </div>
+              <div class="bet_foot_right"> </div>
             </div>
           </div>
 
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap">
+              <div class="bet_head_left"> </div>
+              <div class="bet_head_center">
                 <p> BTS RofloTurik </p>
               </div>
+              <div class="bet_head_right"> </div>
             </div>
             <div class="bet_body">
               <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
@@ -244,7 +252,11 @@
               </a>
             </div>
             <div class="bet_foot">
-              <p> 01:02:03 </p>
+              <div class="bet_foot_left"> </div>
+              <div class="bet_foot_centre">
+                <p> 01:02:03 </p>
+              </div>
+              <div class="bet_foot_right"> </div>
             </div>
           </div>
 
@@ -257,14 +269,19 @@
           <button class="finished_matches" id="tab_2">
             <p> <img src="media/finished_matches.png" id="icon_finished_matches"> Прошедшие матчи </p>
           </button>
+          <button class="admin_panel" id="tab_3">
+            <p> ADMIN PANEL </p>
+          </button>
         </div>
         <div id="tables_of_upcoming_matches">
 
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap">
+              <div class="bet_head_left"> </div>
+              <div class="bet_head_center">
                 <p> Faceit Major </p>
               </div>
+              <div class="bet_head_right"> </div>
             </div>
             <div class="bet_body">
               <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
@@ -282,18 +299,25 @@
               </a>
             </div>
             <div class="bet_foot">
-              <p> 01:02:03 </p>
+              <div class="bet_foot_left"> </div>
+              <div class="bet_foot_centre">
+                <p> 01:02:03 </p>
+              </div>
+              <div class="bet_foot_right"> </div>
             </div>
           </div>
 
         </div>
 
         <div id="tables_of_finished_matches">
+
           <div class="bet">
             <div class="bet_head">
-              <div class="text-wrap">
+              <div class="bet_head_left"> </div>
+              <div class="bet_head_center">
                 <p> BTS RofloTurik </p>
               </div>
+              <div class="bet_head_right"> </div>
             </div>
             <div class="bet_body">
               <a href="#" class="l_team" data-toggle="modal" data-target="#modal_bet">
@@ -311,9 +335,18 @@
               </a>
             </div>
             <div class="bet_foot">
-              <p> 01:02:03 </p>
+              <div class="bet_foot_left"> </div>
+              <div class="bet_foot_centre">
+                <p> 01:02:03 </p>
+              </div>
+              <div class="bet_foot_right"> </div>
             </div>
           </div>
+
+        </div>
+
+        <div id="window_for_admin">
+
         </div>
 
       </div>
