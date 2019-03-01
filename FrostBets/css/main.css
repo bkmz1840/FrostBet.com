@@ -228,19 +228,23 @@ nav {
 	background-color: #C0D7DA;
 }
 
-#close_modal {
+.close {
+	position: relative;
+	left: -30px;
 	outline: none;
 }
 
 #email_contact, #other_topic {
 	height: 30px;
+	background-color: #204058;
 	border: 2px #2A75AE solid;
+	color: #fff;
 	outline: none;
-    padding: 2px 2px 3px 5px;
-	border-radius: 3px;
-   -webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
-   -khtml-border-radius: 3px;
+  padding: 2px 2px 3px 5px;
+	border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -khtml-border-radius: 10px;
 }
 
 #other_topic:focus, #email_contact:focus, #textarea_for_contact:focus {
@@ -404,15 +408,20 @@ footer {
 	text-align: center;
 }
 
+#text_email_faq, #text_check_read_faq, #text_other_topic, #text_message, #text_choose_issue, #a_faq {
+	font-weight: 500;
+	color: #fff;
+}
+
+
 #topic_of_problem {
 	height: 30px;
+	background-color: #204058;
 	border: 2px #2A75AE solid;
+	color: #fff;
 	outline: none;
-    padding: 2px 2px 3px 5px;
-	border-radius: 3px;
-   -webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
-   -khtml-border-radius: 3px;
+  padding: 2px 2px 3px 5px;
+	border-radius: 10px 0 0 10px;
 }
 
 #topic_of_problem:focus {
@@ -425,14 +434,12 @@ footer {
 }
 
 #btn_end_contact {
-	border: 2px #BCD7EC solid;
+	border: 2px #6CA4CE solid;
 	outline: none;
-	border-radius: 7px;
-   -webkit-border-radius: 7px;
-   -moz-border-radius: 7px;
-   -khtml-border-radius: 7px;
-   background-color: #BCD7EC;
-   color: #3F637F;
+	border-radius: 10px;
+  background-color: #6CA4CE;
+  color: #fff;
+	padding: 0 20px 0 20px;
 }
 
 #btn_end_contact:hover {
@@ -477,13 +484,12 @@ footer {
 #textarea_for_contact {
 	width: 100%;
 	height: 150px;
-	border: 2px #2A75AE solid;
+	background-color: #204058;
+	border: 2px #3F637F solid;
+	color: #fff;
 	outline: none;
-    padding: 2px 2px 3px 5px;
-	border-radius: 3px;
-   -webkit-border-radius: 3px;
-   -moz-border-radius: 3px;
-   -khtml-border-radius: 3px;
+  padding: 2px 2px 3px 5px;
+	border-radius: 10px;
 }
 
 .link_in_footer {
@@ -567,14 +573,6 @@ footer {
 	background-color: #4A99D4;
 }
 
-#head_FAQ {
-	background-color: #79BCF0;
-}
-
-#body_FAQ {
-	background-color: #3F627E;
-}
-
 #text_and_numbers_in_faq {
 	margin-left: 5px;
 }
@@ -596,7 +594,7 @@ footer {
 	padding-left: 30px;
 }
 
-#text_registration, #text_agreement {
+#text_registration, #text_agreement, #text_faq, #text_confidentiality, #text_contact {
 	font-size: 1.5em;
 	font-weight: 500;
 	color: #fff;
@@ -605,12 +603,6 @@ footer {
 #modal_body_regestration {
 	background-color: #3F637F;
 	padding-top: 0;
-}
-
-#close_modal_registration {
-	position: relative;
-	left: -30px;
-	outline: none;
 }
 
 #login_registration, #email_registration, #password_registration, #repeatpassword_registration {
@@ -663,8 +655,16 @@ footer {
 	right: -60px;
 }
 
-#modal_body_agreement, #modal_body_confidentiality {
+#modal_head_confidentiality, #modal_head_agreement, #head_FAQ, #modal_head_contact {
 	background-color: #3F637F;
+	padding-bottom: 10px;
+}
+
+#modal_body_agreement, #modal_body_confidentiality, #body_FAQ, #body_modal_contact {
+	position: relative;
+	top: -10px;
+	background-color: #2C506C;
+	border-radius: 10px 10px 0 0;
 	color: #79BCF0;
 }
 
@@ -776,6 +776,10 @@ footer {
 	border-bottom: 2px solid #000;
 	border-radius: 0 0 10px 10px;
 	-webkit-border-radius: 0 0 10px 10px;
-   -moz-border-radius: 0 0 10px 10px;
-   -khtml-border-radius: 0 0 10px 10px;
+  -moz-border-radius: 0 0 10px 10px;
+  -khtml-border-radius: 0 0 10px 10px;
+}
+
+.modal-content {
+	background-color: #3F637F;
 }

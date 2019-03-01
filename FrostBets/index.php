@@ -426,7 +426,7 @@
 			    			<h6> Feb. 24 17:00 </h6>
 			    		</div>
 
-			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal">
+			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
           					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
         				</button>
 
@@ -483,8 +483,7 @@
 		</div>
 
 <!-- Модальное окно регистрации -->
-<div class="modal fade" id="modal_registration" tabindex="-1" role="dialog" aria-labelledby="form_registration"
-     aria-hidden="true">
+<div class="modal fade" id="modal_registration" tabindex="-1" role="dialog" aria-labelledby="form_registration" aria-hidden="true">
 
     <div class="modal-dialog" role="document">
 
@@ -493,8 +492,7 @@
             <div class="modal-header">
 
                 <div class="col-12 text-center mt-2 mb-2" id="text_registration"> Регистрация</div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"
-                        id="close_modal_registration">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <p aria-hidden="true"><i class="ion-close-round"> </i></p>
                 </button>
 
@@ -582,10 +580,10 @@
 
         <div class="modal-content">
 
-            <div class="modal-header">
+            <div class="modal-header" id="modal_head_contact">
 
-                <img src="media/logo.png" id="logo_in_modalregistration">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal">
+                <div class="col-12 text-center" id="text_contact"> Техподдержка FrostBets </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="ion-close-round"> </i></span>
                 </button>
 
@@ -596,7 +594,7 @@
                 <form id="contact_form">
 
                     <div class="form-group row">
-                        <label for="email_contact" class="col-sm-2 col-1 ml-2 font-weight-bold"> Email </label>
+                        <label for="email_contact" class="col-sm-2 col-1 ml-2" id="text_email_faq"> Email </label>
                         <div class="col-sm-6">
                             <input type="email" name="email_contact" class="form-control" id="email_contact" placeholder="Email"  aria-describedby="help_login">
                             <small id="help_email_contact"></small>
@@ -604,42 +602,37 @@
                     </div>
 
                     <div class="form-groups">
-                        <label for="topic_of_problem" class="col-12 font-weight-bold"> 1) Выберите одну из тем: </label>
+                        <label for="topic_of_problem" class="col-12" id="text_choose_issue"> 1) Выберите одну из тем: </label>
                         <div class="col-sm-10 mb-2">
                             <select class="form-control" id="topic_of_problem">
-                                <option>Проблема с выводом средств</option>
-                                <option>Ставка прошла, а средства не зачислились</option>
-                                <option>Проблема с пополнение кошелька</option>
-                                <option>Другое</option>
+                                <option> Проблема с выводом средств </option>
+                                <option> Ставка прошла, а средства не зачислились </option>
+                                <option> Проблема с пополнение кошелька </option>
+                                <option> Другое </option>
                             </select>
                         </div>
                     </div>
 
                     <div class="form-groups" id="div_other_topic">
-                        <label for="other_topic" class="col-sm-6 col-1 ml-2 font-weight-bold"> Введите тему обращения </label>
+                        <label for="other_topic" class="col-sm-6 col-1 ml-2" id="text_other_topic"> Введите тему обращения </label>
                         <div class="col-sm-8">
                             <input type="text" name="other_topic" class="form-control" id="other_topic" placeholder="Другая тема"  aria-describedby="help_login">
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="i_read_faq" class="ml-3 font-weight-bold"> 2) Я полностью прочитал(а) <a href="#" data-toggle="modal" data-target="#modal_FAQ">FAQ</a> и не нашел(а) описание своей проблемы <input type="checkbox" name="i_read_faq" id="i_read_faq"> </label>
+                        <label for="i_read_faq" class="ml-3" id="text_check_read_faq"> 2) Я полностью прочитал(а) <a href="#" data-toggle="modal" data-target="#modal_FAQ" id="a_faq">FAQ</a> и не нашел(а) решение своей проблемы <input type="checkbox" name="i_read_faq" id="i_read_faq"> </label>
                     </div>
 
                     <div class="form-group">
 
-                        <label for="textarea_for_contact" class="col-12 font-weight-bold text-center"> Ваше сообщение нам </label>
+                        <label for="textarea_for_contact" class="col-12 text-center" id="text_message"> Ваше сообщение нам </label>
                         <div class="col-sm-12">
                             <textarea id="textarea_for_contact"></textarea>
                         </div>
 
                     </div>
-
-            </div>
-
-            <div class="modal-footer">
-
-                <div class="mr-auto ml-auto"> <button id="btn_end_contact"> Отправить </button> </div>
+                    <div class="text-center"> <button id="btn_end_contact"> Отправить </button> </div>
 
             </div>
             </form>
@@ -659,8 +652,8 @@
 
             <div class="modal-header" id="head_FAQ">
 
-                <img src="media/logo.png" id="logo_in_modalregistration">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal">
+                <div class="col-12 text-center" id="text_faq"> Что такое FrostBets.com? </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="ion-close-round"> </i></span>
                 </button>
 
@@ -814,10 +807,10 @@
 
         <div class="modal-content">
 
-            <div class="modal-header">
+            <div class="modal-header" id="modal_head_agreement">
 
                 <div class="col-12 text-center" id="text_agreement"> Соглашение </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal_registration">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="ion-close-round"> </i></span>
                 </button>
 
@@ -886,10 +879,10 @@
 
         <div class="modal-content">
 
-            <div class="modal-header">
+            <div class="modal-header" id="modal_head_confidentiality">
 
-                <div class="col-12 text-center" id="text_agreement"> Конфиденциальность </div>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal_registration">
+                <div class="col-12 text-center" id="text_confidentiality"> Конфиденциальность </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="ion-close-round"> </i></span>
                 </button>
 
