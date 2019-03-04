@@ -195,32 +195,6 @@
             </form>
             <p id="upload_res"></p>
         </div>
-    <script>
-        $("#upload_match").click(function(){
-            var team_right = $("#right_team").val();
-            var team_left = $("#left_team").val();
-            var tournament = $("#tournament_name").val();
-            var date = $("#date").val();
-            
-            console.log(team_right);console.log(team_left);console.log(tournament);console.log(date);
-            $.trim(right_team); $.trim(left_team); $.trim(tournament);
-            
-            $.ajax({
-                url: "php_scripts/action_upload_match.php",
-                type: "POST",
-                data: {team_left: team_left, team_right: team_right, tournament: tournament, date: date},
-                success: function(data){  
-                    if(data == 0){
-                        $('#upload_res').text('Матч успешно добавлен');
-                    }
-                    if(data == 1){
-                        $('#upload_res').text('Произошла ошибка');
-                    }
-                }
-            })
-        });
-     
-    </script>
     </div>
 <?php else: ?>
     <div class="container col-12" id="prebets">
