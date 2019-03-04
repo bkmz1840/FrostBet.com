@@ -186,12 +186,12 @@
     <div class="container-fluid d-flex" id="main_content">
         <div id="adm_panel">
              <h2>Добавить Матч</h2>
-            <form action="" method ="POST">
+            <form action="php_scripts/action_upload_match.php" method ="POST">
                 <p>Название левой команды</p><input type="text" name="left_team" id="left_team">
                 <p>Название правой команды</p><input type="text"name="right_team" id="right_team">
                 <p>Название турнира</p><input type="text" name="tournament_name" id="tournament_name">
-                <p>Дата</p><input type="datetime-local" id="date"><br>
-                <input type="button" value="Загрузить в базу данных" id="upload_match">
+                <p>Дата</p><input type="datetime-local" id="date" name="date"><br>
+                <input type="submit" value="Загрузить в базу данных" id="upload_match">
             </form>
             <p id="upload_res"></p>
         </div>
