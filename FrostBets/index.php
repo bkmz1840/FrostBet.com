@@ -162,7 +162,7 @@
 
                         </div>
                     </div>
-                    <button class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
+                    <button type="button" class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
                 </form>
                 <button class="btn my-2 my-sm-0" id="btn_registration" data-toggle="modal" data-target="#modal_registration">Регистрация</button>
 
@@ -522,8 +522,6 @@
 
                     <div class="coloumn">
 
-                        <label id="error_login_registration" class="col-12 text-center"></label>
-
                         <input type="text" name="login_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center" id="login_registration"
                                placeholder="Ваш никнейм">
@@ -533,8 +531,6 @@
                     </div>
 
                     <div class="coloumn">
-
-                        <label id="error_email_registration" class="col-12 text-center"></label>
 
                         <input type="email" name="email_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center mt-3" id="email_registration"
