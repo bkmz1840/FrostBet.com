@@ -162,7 +162,7 @@
 
                         </div>
                     </div>
-                    <button class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
+                    <button type="button" class="ml-2 ml-lg-0 my-2 my-sm-0 mr-lg-2" id="btn_login">Войти</button>
                 </form>
                 <button class="btn my-2 my-sm-0" id="btn_registration" data-toggle="modal" data-target="#modal_registration">Регистрация</button>
 
@@ -269,9 +269,13 @@
           <button class="finished_matches" id="tab_2">
             <p> <img src="media/finished_matches.png" id="icon_finished_matches"> Прошедшие матчи </p>
           </button>
+
+          <?php if($_SESSION['logged_user']['adm_status']==2) :?>
           <button class="admin_panel" id="tab_3">
             <p> ADMIN PANEL </p>
           </button>
+        <?php endif; ?>
+
         </div>
         <div id="tables_of_upcoming_matches">
 
@@ -345,9 +349,23 @@
 
         </div>
 
+        <?php if($_SESSION['logged_user']['adm_status']==2) :?>
         <div id="window_for_admin">
-
+            <div class="container-fluid d-flex" id="main_content">
+                <div id="adm_panel">
+                    <h2>Добавить Матч</h2>
+                    <form action="php_scripts/action_upload_match.php" method ="POST">
+                        <p>Название левой команды</p><input type="text" name="left_team" id="left_team">
+                        <p>Название правой команды</p><input type="text"name="right_team" id="right_team">
+                        <p>Название турнира</p><input type="text" name="tournament_name" id="tournament_name">
+                        <p>Дата</p><input type="datetime-local" id="date" name="date"><br>
+                        <input type="submit" value="Загрузить в базу данных" id="upload_match">
+                    </form>
+                    <p id="upload_res"></p>
+                </div>
+            </div>
         </div>
+        <?php endif; ?>
 
       </div>
 
@@ -447,14 +465,12 @@
             <div class="modal-body" id="modal_body_regestration">
                 <form id="form_registration" method = "post">
                     <div class="coloumn">
-                        <label id="error_login_registration" class="col-12 text-center"></label>
                         <input type="text" name="login_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center" id="login_registration"
                                placeholder="Ваш никнейм">
                         <p class="col-12 text-center" id="error_login_php"></p>
                     </div>
                     <div class="coloumn">
-                        <label id="error_email_registration" class="col-12 text-center"></label>
                         <input type="email" name="email_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center mt-3" id="email_registration"
                                placeholder="Ваш Email">
@@ -480,6 +496,7 @@
                     </div>
                     <p id="success_reg" class=""></p>
             </div>
+
             <div class="modal-footer">
                 <div class="mr-auto ml-auto">
                     <button id="btn_end_registration" type="button"> Зарегестрироваться</button>

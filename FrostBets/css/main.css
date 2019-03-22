@@ -264,6 +264,27 @@ label {
 main {
 }
 
+/* Админ панель */
+#adm_panel{
+    width: 900px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: #1B3950;
+    padding: 20px;
+}
+#adm_panel > h2{   
+    color: #FFF;
+}
+#adm_panel > form > p{
+    color: #FFF;
+}
+#adm_panel > form > input {
+    height: 25px;
+    margin: 15px 0;
+    display: block;
+}
+
+
 #prebets {
 	height: 200px;
 	margin-top: 80px;
