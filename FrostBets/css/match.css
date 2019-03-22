@@ -137,126 +137,31 @@
 }
 
 #header_bet {
-	background-color: #2C506C;
+  background-color: #2C506C;
+	padding-bottom: 10px;
 }
 
-#time_to_start_match {
-	height: 40px;
-	min-width: 75px;
-	margin-top: 20px;
-	text-align: center;
-	color: #fff;
-	padding: 5px;
-	border: 2px solid #3B89C3;
-	border-radius: 10px;
-	-webkit-border-radius: 10px;
-   -moz-border-radius: 10px;
-   -khtml-border-radius: 10px;
+.info_about_match {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 0 10px 0 10px;
+  margin-left: 30px;
 }
 
-#info_about_bet {
-	color: #fff;
-	margin-top: 5px;
-	margin-bottom: 25px;
+.time_to_start_match p, .tournament p, .date_of_match p {
+  color: #E1E1E1;
+  text-align: center;
+  font-weight: 500;
 }
 
 #body_bet {
-	background-color: #3F637F;
-	padding-top: 0;
-}
-
-#type_of_bet {
-	height: 35px;
-	width: 110px;
-	margin-top: -17px;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 3px;
-	background-color: #3F637F;
-	text-align: center;
-	color: #fff;
-	border: 2px solid #D83E20;
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   -khtml-border-radius: 20px;
-}
-
-#bet_on {
-	margin-top: 5px;
-	color: #fff;
-}
-
-#bet_on span {
-	color: #D83E20;
-}
-
-#choose_of_command {
-	display: flex;
-	justify-content: space-between;
-	flex-direction: row;
-}
-
-#modal_l_team_name a, #modal_r_team_name a {
-	padding: 0 15px 0 15px;
-	color: #fff;
-	font-family: 'Russo One';
-	text-align: center;
-	border: 2px solid #2C506C;
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   -khtml-border-radius: 20px;
-}
-
-#modal_l_team_logo, #modal_r_team_logo {
-	display: flex;
-	height: 100px;
-	width: 100px;
-	padding: 5px;
-	background-color: #2C506C;
-	border-radius: 7px;
-	-webkit-border-radius: 7px;
-  -moz-border-radius: 7px;
-  -khtml-border-radius: 7px;
-}
-
-#modal_l_team_logo img, #modal_r_team_logo img  {
-	display: block;
-	margin: auto;
-}
-
-#coef_l_team, #coef_r_team {
-	display: flex;
-	margin-top: 30px;
-	align-items: center;
-}
-
-#coef_l_team a, #coef_r_team a {
-	height: 25px;
-	padding: 0 7px 0 7px;
-	color: #B2D8F5;
-	text-align: center;
-	font-family: 'Russo One';
-	border: 1px solid #B3CDE0;
-}
-
-#coef_l_team a:hover, #coef_r_team a:hover {
-	color: #BC89E6;
-	-webkit-box-shadow: 0 0 10px rgba(188,214,235, 1);
-    box-shadow: 0 0 10px rgba(188,214,235, 1);
-}
-
-#modal_vs {
-	display: flex;
-	margin-top: 50px;
-	align-items: center;
-}
-
-#modal_vs p {
-	font-size: calc(2px + 2vw);
-	color: #fff;
-	font-family: 'Russo One';
+  position: relative;
+	top: -10px;
+	background-color: #204058;
+	border-radius: 10px 10px 0 0;
+	color: #79BCF0;
 }
 
 #checkmark_l, #checkmark_r {

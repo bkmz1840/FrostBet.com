@@ -401,198 +401,107 @@
     <!-- Подвал футера -->
     <div class="container-fluid" id="footer_footer">
         <div class="text-center" id="copyright">
-            &#169 Copyright Все права защищены.
+            #169 Copyright Все права защищены.
         </div>
     </div>
-
 </footer>
-
 <!-- Окно со ставкой -->
 		<div class="modal fade" id="modal_bet" tabindex="-1" role="dialog" aria-labelledby="Bet" aria-hidden="true">
-
 			<div class="modal-dialog" role="document">
-
 			    <div class="modal-content">
-
 			    	<div class="modal-header" id="header_bet">
-
-			    		<div class="col-3" id="time_to_start_match">
-			    			<p> 06:20:59 </p>
-			    		</div>
-
-			    		<div class="col-6 text-center" id="info_about_bet">
-			    			<h6 id="modal_tournament_name"> ESL Pro League </h6>
-			    			<h6> BO3 </h6>
-			    			<h6> Feb. 24 17:00 </h6>
-			    		</div>
-
-			    		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <div class="info_about_match">
+                <div class="time_to_start_match"> <p> 06:20:59 </p> </div>
+                <div class="tournament">
+                  <div class="coloumn">
+                    <p> ESL Pro League </p>
+                    <p> BO3 </p>
+                    <div class="type_of_bet"> Вид ставки </div>
+                  </div>
+                </div>
+                <div class="date_of_match"> <p> Feb.24 17:00 </p> </div>
+              </div>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
-        				</button>
-
-			      	</div>
-
-			      	<div class="modal-body pl-0 pl-sm-3 pr-0 pr-sm-3" id="body_bet">
-
-			      		<div id="type_of_bet">
-			      			<h6> Вид ставки </h6>
-			      		</div>
-
-			      		<div class="text-center" id="bet_on">
-			      			<h6> <span> &#9204</span>Победа в серии BO3<span>&#9205 </span> </h6>
-			      		</div>
-
-			      		<div class="text-center" id="choose_of_command">
-				      		<div class="ml-0 ml-sm-3" id="modal_l_team">
-				      			<div id="modal_l_team_name"> <a href="#"> Mouse </a> </div>
-				      			<a href="#" id="modal_l_team_logo"> <img src="media/mousesports.png"> </a>
-				      			<ion-icon id="checkmark_l" name="checkmark-circle"></ion-icon>
-				      		</div>
-				      		<div id="coef_l_team"> <a href="#" > 1.25 </a> </div>
-
-				      		<div id="modal_vs"> <p> VS </p> </div>
-
-							<div id="coef_r_team"> <a href="#" > 3.26 </a> </div>
-				      		<div class="mr-0 mr-sm-3" id="modal_r_team">
-				      			<div id="modal_r_team_name"> <a href="#"> Fnatic </a> </div>
-				      			<a href="#" id="modal_r_team_logo"> <img src="media/fnatic.png"> </a>
-				      			<ion-icon id="checkmark_r" name="checkmark-circle"></ion-icon>
-				      		</div>
-				      	</div>
-
-				      	<div class="container" id="choose_of_sum">
-				      		<label> Сумма ставки: </label>
-				      		<input class="ml-3" type="number" name="sum_of_bet" placeholder="Введите сумму...">
-				      		<img src="media/snowflake.png" id="snowflake" class="text-center">
-				      	</div>
-
-				      	<div class="container">
-				      		<p id="min_sum_of_bet"> Минимальная сумма ставки - 10 <img src="media/snowflake.png" id="snowflake" class="text-center"> </p>
-				      		<p id="your_winnings"> Ваш потенциальный выигрыш: <span id="n"> n </span> <img src="media/snowflake.png" id="snowflake" class="text-center"> (x<span id="coef">3.26</span>) </p>
-				      	</div>
+        			</button>
+			      </div>
+			      <div class="modal-body" id="body_bet">
 
 			     	</div>
+			      <div class="modal-footer" id="footer_bet">
 
-			      	<div class="modal-footer" id="footer_bet">
-
-			      		<button class="ml-auto mr-auto" id="btn_do_bet"> Сделать ставку </button>
-
-			      	</div>
+			      </div>
 			    </div>
 			</div>
 		</div>
-
 <!-- Модальное окно регистрации -->
 <div class="modal fade" id="modal_registration" tabindex="-1" role="dialog" aria-labelledby="form_registration" aria-hidden="true">
-
     <div class="modal-dialog" role="document">
-
         <div class="modal-content">
-
             <div class="modal-header">
-
                 <div class="col-12 text-center mt-2 mb-2" id="text_registration"> Регистрация</div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <p aria-hidden="true"><i class="ion-close-round"> </i></p>
                 </button>
-
             </div>
-
             <div class="modal-body" id="modal_body_regestration">
-
                 <form id="form_registration" method = "post">
-
                     <div class="coloumn">
-
                         <label id="error_login_registration" class="col-12 text-center"></label>
-
                         <input type="text" name="login_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center" id="login_registration"
                                placeholder="Ваш никнейм">
-
                         <p class="col-12 text-center" id="error_login_php"></p>
-
                     </div>
-
                     <div class="coloumn">
-
                         <label id="error_email_registration" class="col-12 text-center"></label>
-
                         <input type="email" name="email_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center mt-3" id="email_registration"
                                placeholder="Ваш Email">
-
                         <p id="error_email_php" class="col-12 text-center"></p>
-
                     </div>
-
                     <div class="coloumn">
-
                         <input type="password" name="password_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center mt-4" id="password_registration"
                                placeholder="Пароль">
-
                     </div>
-
                     <div class="coloumn">
-
                         <input type="password" id="repeatpassword_registration" name="repeatpassword_registration"
                                class="form-control col-md-9 ml-auto mr-auto text-center mt-4"
                                placeholder="Повторите пароль">
-
                     </div>
-
                     <div class="container" id="reCaptcha">
-
-
                     </div>
-
                     <div class="col-12 text-center">
-
                         <input type="checkbox" name="check_read_agreement" id="check_read_agreement" class="mt-2">
                         <label id="label_check_read_agreement" class="form-check-label" for="check_read_agreement"> Я
                             прочитал условия <a href="#" id="a_agreement" data-toggle="modal"
                                                 data-target="#modal_agreement"> соглашения </a> </label>
-
                     </div>
                     <p id="success_reg" class=""></p>
-
             </div>
-
             <div class="modal-footer">
-
                 <div class="mr-auto ml-auto">
                     <button id="btn_end_registration" type="button"> Зарегестрироваться</button>
                 </div>
                 </form>
-
             </div>
         </div>
     </div>
 </div>
-
-
 <script type="text/javascript" src="./js/ajax-signup.js"></script>
 <!-- Модальое окно связи с администрацией -->
 <div class="modal fade" id="modal_contact" tabindex="-1" role="dialog" aria-labelledby="form_contact" aria-hidden="true">
-
     <div class="modal-dialog" role="document">
-
         <div class="modal-content">
-
             <div class="modal-header" id="modal_head_contact">
-
                 <div class="col-12 text-center" id="text_contact"> Техподдержка FrostBets </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="ion-close-round"> </i></span>
                 </button>
-
             </div>
-
             <div class="modal-body" id="body_modal_contact">
-
                 <form id="contact_form">
-
                     <div class="form-group row">
                         <label for="email_contact" class="col-sm-2 col-1 ml-2" id="text_email_faq"> Email </label>
                         <div class="col-sm-6">
@@ -600,7 +509,6 @@
                             <small id="help_email_contact"></small>
                         </div>
                     </div>
-
                     <div class="form-groups">
                         <label for="topic_of_problem" class="col-12" id="text_choose_issue"> 1) Выберите одну из тем: </label>
                         <div class="col-sm-10 mb-2">
@@ -612,141 +520,89 @@
                             </select>
                         </div>
                     </div>
-
                     <div class="form-groups" id="div_other_topic">
                         <label for="other_topic" class="col-sm-6 col-1 ml-2" id="text_other_topic"> Введите тему обращения </label>
                         <div class="col-sm-8">
                             <input type="text" name="other_topic" class="form-control" id="other_topic" placeholder="Другая тема"  aria-describedby="help_login">
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="i_read_faq" class="ml-3" id="text_check_read_faq"> 2) Я полностью прочитал(а) <a href="#" data-toggle="modal" data-target="#modal_FAQ" id="a_faq">FAQ</a> и не нашел(а) решение своей проблемы <input type="checkbox" name="i_read_faq" id="i_read_faq"> </label>
                     </div>
-
                     <div class="form-group">
-
                         <label for="textarea_for_contact" class="col-12 text-center" id="text_message"> Ваше сообщение нам </label>
                         <div class="col-sm-12">
                             <textarea id="textarea_for_contact"></textarea>
                         </div>
-
                     </div>
                     <div class="text-center"> <button id="btn_end_contact"> Отправить </button> </div>
-
             </div>
             </form>
         </div>
     </div>
 </div>
-
 <!-- Модальое окно "Забыл пароль" -->
-
-
 <!-- Модальое окно FAQ -->
 <div class="modal fade" id="modal_FAQ" tabindex="-1" role="dialog" aria-labelledby="FAQ" aria-hidden="true">
-
     <div class="modal-dialog modal-lg" role="document">
-
         <div class="modal-content">
-
             <div class="modal-header" id="head_FAQ">
-
                 <div class="col-12 text-center" id="text_faq"> Что такое FrostBets.com? </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="ion-close-round"> </i></span>
                 </button>
-
             </div>
-
             <div class="modal-body" id="body_FAQ">
-
                 <div class="container" id="icons">
-
-
-
                 </div>
-
                 <div class="container">
-
                     <h4 class="headers_in_FAQ"> О проекте FROSTBETS.COM </h4>
                     <p class="text_in_FAQ"> Сайт представляет собой биржу ставок, на которой любой игрок играет против других игроков и может поставить условные единицы “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> на победу одной из двух команд. Если вы разбираетесь в Counter-Strike: Global Offensive и можете предсказывать результаты матчей, то наш сайт предоставляет Вам прекрасный способ заработать на своих знаниях и опыте по Counter-Strike: Global Offensive. </p>
-
                 </div>
-
                 <div class="container">
-
                     <h4 class="headers_in_FAQ"> Часто задаваемые вопросы </h4>
                     <h5 class="headers_in_FAQ"> Как это работает? </h5>
                     <div class="row">
-
                         <div class="col-6 col-md-4">
-
                             <img src="media/1.png" class="numbers_in_FAQ">
                             <div class="text_numbers">
                                 <p class="text_in_FAQ"> Вы можете выбрать любой удобный способ пополнения. Пополняя счёт вам зачисляются виртуальная валюта “Снежинки” <br/>
                                     1 RUB = 1 <img src="media/snowflake.png" id="snowflake" class="text-center">
                                 </p>
                             </div>
-
                         </div>
-
                         <div class="col-6 col-md-4">
-
                             <img src="media/2.png" class="numbers_in_FAQ">
                             <div class="text_numbers"> <p class="text_in_FAQ"> Выбираем матч между двумя командами на главной странице. </p> </div>
-
                         </div>
-
                         <div class="col-6 col-md-4">
-
                             <img src="media/3.png" class="numbers_in_FAQ">
                             <div class="text_numbers"> <p class="text_in_FAQ"> Нажимаем на название или логтип команды на которую хотим поставить, и делаем на нее ставку. Можно поставить любое количество <img src="media/snowflake.png" id="snowflake" class="text-center"> на эту команду. </p> </div>
-
                         </div>
-
                         <div class="col-6 col-md-4">
-
                             <img src="media/4.png" class="numbers_in_FAQ">
                             <div class="text_numbers"> <p class="text_in_FAQ"> Дожидаемся конца матча и  узнаем результат на странице ставки. </p> </div>
-
                         </div>
-
                         <div class="col-6 col-md-4">
-
                             <img src="media/5.png" class="numbers_in_FAQ">
                             <div class="text_numbers"> <p class="text_in_FAQ"> Система делит “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> , поставленные на проигравшую команду, между людьми, поставившими на победившую команду, пропорционально сделанным ими ставками. </p> </div>
-
                         </div>
-
                         <div class="col-6 col-md-4">
-
                             <img src="media/6.png" class="numbers_in_FAQ">
                             <div class="text_numbers"> <p class="text_in_FAQ"> Система удерживает комиссию n% с каждого выигрыша. После завершения матча вы можете перевести “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> в валюту и забрать банк </p> </div>
-
                         </div>
-
                     </div>
-
                     <div class="container">
-
                         <h5 class="headers_in_FAQ"> Конфидециальность </h5>
                         <p class="text_in_FAQ"> Мы не храним какие-либо данные о пользователях, кроме логина и пароля от сайта FROSTBETS.COM. Ваш аватар и никнейм доступен каждому пользователю. FROSTBETS.COM не является аффилированным лицом компании VALVE и Counter-Strike:Global Offensive </p>
-
                     </div>
-
                     <div class="container">
-
                         <h5 class="headers_in_FAQ"> Виртуальная валюта не была зачислена </h5>
                         <p class="text_in_FAQ"> Валюта на счет поступает почти мгновенно, после оплаты. В редких случаях возможны задержки со стороны платежной системы. Не стоит беспокоиться, баланс обязательно поступит. Если через 24 часа Вы так и не получили “Снежинки” <img src="media/snowflake.png" id="snowflake" class="text-center"> на счёт, то стоит обратиться в поддержку сайта, Мы обязательно Вам поможем! </p>
-
                     </div>
-
                     <div class="container">
-
                         <h5 class="headers_in_FAQ"> Деньги не пришли на счёт после вывода </h5>
                         <p class="text_in_FAQ"> Процесс обработки заявки на вывод обычно занимает менее часа, но в некоторых ситуациях может занять до 	3 рабочих дней. Вывод производится на кошелёк WebMoney, QIWI, Яндекс.Деньги, Visa или MasterCard. 		Вывод на другие платёжные системы не производится. </p>
-
                         <p class="text_in_FAQ" style="text-align: center;"> ! В случае указания неправильного номера кошелька средства не возвращаются. ! </p>
 
                     </div>

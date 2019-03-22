@@ -220,6 +220,7 @@ nav {
 }
 
 .modal-header {
+	border: none;
 	background-color: #3F637F;
 	padding: 0 10px 0 20px;
 }
@@ -410,7 +411,7 @@ footer {
 
 #text_email_faq, #text_check_read_faq, #text_other_topic, #text_message, #text_choose_issue, #a_faq {
 	font-weight: 500;
-	color: #fff;
+	color: #E1E1E1;
 }
 
 
@@ -418,7 +419,7 @@ footer {
 	height: 30px;
 	background-color: #204058;
 	border: 2px #2A75AE solid;
-	color: #fff;
+	color: #E1E1E1;
 	outline: none;
   padding: 2px 2px 3px 5px;
 	border-radius: 10px 0 0 10px;
@@ -486,7 +487,7 @@ footer {
 	height: 150px;
 	background-color: #204058;
 	border: 2px #3F637F solid;
-	color: #fff;
+	color: #E1E1E1;
 	outline: none;
   padding: 2px 2px 3px 5px;
 	border-radius: 10px;
@@ -597,7 +598,7 @@ footer {
 #text_registration, #text_agreement, #text_faq, #text_confidentiality, #text_contact {
 	font-size: 1.5em;
 	font-weight: 500;
-	color: #fff;
+	color: #E1E1E1;
 }
 
 #modal_body_regestration {
@@ -655,12 +656,12 @@ footer {
 	right: -60px;
 }
 
-#modal_head_confidentiality, #modal_head_agreement, #head_FAQ, #modal_head_contact {
+#modal_head_confidentiality, #modal_head_agreement, #head_FAQ, #modal_head_contact, #header_bet {
 	background-color: #3F637F;
 	padding-bottom: 10px;
 }
 
-#modal_body_agreement, #modal_body_confidentiality, #body_FAQ, #body_modal_contact {
+#modal_body_agreement, #modal_body_confidentiality, #body_FAQ, #body_modal_contact, #body_bet {
 	position: relative;
 	top: -10px;
 	background-color: #2C506C;
@@ -670,10 +671,6 @@ footer {
 
 .ion-close-round {
 	color: #fff;
-}
-
-.modal-header {
-	border: none;
 }
 
 .modal-footer {
