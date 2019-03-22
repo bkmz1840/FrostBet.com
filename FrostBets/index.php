@@ -426,25 +426,62 @@
 <!-- Окно со ставкой -->
 		<div class="modal fade" id="modal_bet" tabindex="-1" role="dialog" aria-labelledby="Bet" aria-hidden="true">
 			<div class="modal-dialog" role="document">
-			    <div class="modal-content">
+			    <div class="modal-content" id="modal_content_bet">
 			    	<div class="modal-header" id="header_bet">
-              <div class="info_about_match">
-                <div class="time_to_start_match"> <p> 06:20:59 </p> </div>
+              <div class="col-12" id="info_about_match">
                 <div class="tournament">
-                  <div class="coloumn">
-                    <p> ESL Pro League </p>
-                    <p> BO3 </p>
-                    <div class="type_of_bet"> Вид ставки </div>
+                  <p> ESL ProLeague </p>
+                </div>
+                <div class="date_and_time_of_match">
+                  <p class="date_of_match"> Feb.24 17:00 </p>
+                  <p> 06:20:59 </p>
+                  <div class="type_of_bet">
+                    <p> Вид ставки </p>
                   </div>
                 </div>
-                <div class="date_of_match"> <p> Feb.24 17:00 </p> </div>
+                <div class="support_block"></div>
               </div>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true"><i class="ion-close-round"> </i></span>
-        			</button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_modal_bet">
+            				<span aria-hidden="true"><i class="ion-close-round"> </i></span>
+          		</button>
 			      </div>
 			      <div class="modal-body" id="body_bet">
-
+              <p class="choose_type_of_bet"> Победа в серии BO3 </p>
+              <div class="choose_team">
+                <div class="l_team">
+                  <div class="row">
+                    <div class="coloumn">
+                      <div class="l_team_name">
+                        <p> Fnatic </p>
+                      </div>
+                      <div class="l_team_logo"></div>
+                    </div>
+                    <div class="l_team_coef"> 3.80 </div>
+                  </div>
+                </div>
+                <div class="modal_vs"></div>
+                <div class="r_team">
+                  <div class="row">
+                    <div class="r_team_coef">7.00</div>
+                    <div class="coloumn">
+                      <div class="r_team_name">
+                        <p> Mousesport </p>
+                      </div>
+                      <div class="r_team_logo"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container" id="choose_of_sum">
+				     		<label> Сумма ставки: </label>
+				     		<input class="ml-3" type="number" name="sum_of_bet" placeholder="Введите сумму...">
+				     		<img src="media/snowflake.png" id="snowflake" class="text-center">
+				     	</div>
+				      <div class="container">
+				     		<p id="min_sum_of_bet"> Минимальная сумма ставки - 10 <img src="media/snowflake.png" id="snowflake" class="text-center"> </p>
+				     		<p id="your_winnings"> Потенциальный выигрыш: <span id="n"> n </span> <img src="media/snowflake.png" id="snowflake" class="text-center"> (x<span id="coef">3.26</span>) </p>
+			      	</div>
+              <buttom class="btn_do_bet"> Сделать ставку </buttom>
 			     	</div>
 			      <div class="modal-footer" id="footer_bet">
 

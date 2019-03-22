@@ -136,24 +136,51 @@
   font-size: 1.5em;
 }
 
+#modal_content_bet {
+  background-color: #2C506C;
+}
+
 #header_bet {
   background-color: #2C506C;
-	padding-bottom: 10px;
+	padding: 0 0 10px 0;
 }
 
-.info_about_match {
+#info_about_match {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
-  padding: 0 10px 0 10px;
-  margin-left: 30px;
+  justify-content: space-between;
+  padding: 0;
+  z-index: 1010;
 }
 
-.time_to_start_match p, .tournament p, .date_of_match p {
+.tournament {
+  align-self: center;
+  padding: 5px 10px 10px 15px;
+  background-color: #204058;
+  border-radius: 0 10px 10px 0;
+}
+
+.tournament p, .date_and_time_of_match p, .type_of_bet p {
   color: #E1E1E1;
   text-align: center;
   font-weight: 500;
+}
+
+.date_of_match, .tournament p, .type_of_bet p {
+  margin-bottom: 0;
+}
+
+.support_block {
+  height: 50px;
+  width: 135px;
+}
+
+.type_of_bet {
+  background-color: #3F637F;
+  padding: 0 15px 5px 15px;
+  border: 2px solid #77BAEC;
+  border-radius: 20px;
+  margin-bottom: -16px;
 }
 
 #body_bet {
@@ -162,15 +189,65 @@
 	background-color: #204058;
 	border-radius: 10px 10px 0 0;
 	color: #79BCF0;
+  padding-top: 17px;
+  z-index: 1005;
 }
 
-#checkmark_l, #checkmark_r {
-	display: none;
-	position: relative;
-	top: -98px;
-	right: -75px;
-	color: #fff;
-	font-size: 20px;
+.choose_type_of_bet {
+  color: #E1E1E1;
+  text-align: center;
+  font-weight: 500;
+}
+
+.choose_team {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 0 25px 0 25px;
+  margin-bottom: 10px;
+}
+
+.l_team_name p, .r_team_name p {
+  color: #E1E1E1;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-family: "Russo One";
+}
+
+.l_team_logo, .r_team_logo {
+  height: 100px;
+  width: 100px;
+  background-color: #2C506C;
+  border-radius: 10px;
+}
+
+.modal_vs {
+  margin: 0 20px 0 20px;
+}
+
+.l_team_coef {
+  height: 35px;
+  padding: 5px 15px 10px 10px;
+  margin-top: 55px;
+  background-color: #8D99A3;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Russo One";
+  border-radius: 0 10px 10px 0;
+}
+
+.r_team_coef {
+  height: 35px;
+  padding: 5px 10px 10px 15px;
+  margin-top: 55px;
+  background-color: #8D99A3;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Russo One";
+  border-radius: 10px 0 0 10px;
 }
 
 #choose_of_sum label {
@@ -198,11 +275,14 @@
 }
 
 #min_sum_of_bet {
+  text-align: center;
+  font-size: 0.6em;
 	color: #fff;
+  padding-left: 35px;
+  margin-bottom: 0;
 }
 
 #your_winnings {
-	text-align: center;
 	font-size: 1.2em;
 	font-weight: 500;
 	color: #fff;
@@ -213,29 +293,26 @@
 	padding-top: 0;
 }
 
-#btn_do_bet {
-	position: relative;
-	top: -20px;
-	height: 40px;
-	width: 250px;
-	background-color: #6CA4CE;
-	outline: none;
-	color: #fff;
-	font-weight: 700;
-	font-size: 1.2em;
-	border: none;
-	border-radius: 20px;
-	-webkit-border-radius: 20px;
-   -moz-border-radius: 20px;
-   -khtml-border-radius: 20px;
+.btn_do_bet {
+  display: flex;
+  width: 206px;
+  padding: 0 30px 5px 30px;
+  background-color: #3F637F;
+  border: 2px solid #77BAEC;
+  border-radius: 20px;
+  color: #E1E1E1;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 0 auto -35px auto;
 }
 
-#btn_do_bet:hover {
+.btn_do_bet:hover {
 	-webkit-box-shadow: 0 0 10px #6CA4CE;
     box-shadow: 0 0 10px #6CA4CE;
 }
 
-#btn_do_bet:active {
+.btn_do_bet:active {
 	box-shadow: none;
 	-webkit-box-shadow: none;
 }

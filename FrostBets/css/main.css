@@ -231,7 +231,7 @@ nav {
 
 .close {
 	position: relative;
-	left: -30px;
+	left: -40px;
 	outline: none;
 }
 
@@ -272,7 +272,7 @@ main {
     background-color: #1B3950;
     padding: 20px;
 }
-#adm_panel > h2{   
+#adm_panel > h2{
     color: #FFF;
 }
 #adm_panel > form > p{
