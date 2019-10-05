@@ -459,7 +459,7 @@
                     <div class="l_team_coef"> 3.80 </div>
                   </div>
                 </div>
-                <div class="modal_vs"></div>
+                <div class="modal_vs"> <img src="media/vs.png"> </div>
                 <div class="r_team">
                   <div class="row">
                     <div class="r_team_coef">7.00</div>
